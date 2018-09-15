@@ -1,0 +1,140 @@
+What is 1 + 1 = ?
+3
+2
+0
+4
+2
+I
+How long was the shortest war on record? (Hint: how many minutes)
+32
+38
+50
+60
+2
+I
+What was Bank of America's original name?
+Bank of Italy
+Bank of Germany
+Bank of America
+Bank of England
+1
+M
+What is the best-selling video game of all time? 
+Call of Duty
+Mincraft
+Mario
+Tetris
+4
+M
+Is C++ an object oriented programming language?
+Yes
+No
+What does object oriented mean?
+Umm what is C++?
+1
+I
+What does A.I. stand for?
+Artificial Intelligence
+Art Interface
+American Intelligence
+Artificial Interface
+1
+I
+Which class is COMP 2710?
+Fundamentals of Computing I
+Fundamentals of Computing II
+Software Construction
+Discrete Structures	 	
+3
+I
+When was the Shelby Center built?
+2005
+2008
+2010
+2014
+2
+T
+What does CSSE stand for?
+Computer Standards/Science Education
+Computer Science/Software Engineering
+Construction Science/Software Education
+Computer System/Social Engineering
+2
+T
+What language do you learn in COMP 1210 and 2210?
+Java
+C#
+C++
+C
+1
+I
+What language do you learn in COMP 2710?
+Java
+C#
+C++
+C
+3
+I
+Does C have garbage collection?
+Yes
+No
+What is garbage collection?
+I didn't learn C no fair!
+2
+I
+Is Java an object oriented programming language?
+Yes
+No
+What does object oriented mean?
+Umm how can coffee be object oriented?
+1
+T
+What weights more a pound of feathers or a pound of bricks?
+a pound of feathers
+a pound of bricks
+They weight the same.
+Does it really matter?
+3
+I
+What digit is the most frequent between the numbers 1 and 1,000 (inclusive)?
+2
+0
+1
+5
+3
+I
+What is the Iron Bowl?
+A stadium in Alabama.
+A trophy given to the best engineering student in the US.
+The rival game between Auburn and Alabama.
+A shiny metal bowl duh?
+3
+T
+What should you not do if you want to graduate in four years from Auburn?
+Study
+Have fun
+Party
+Step on the seal.
+4
+M
+How many months have 28 days?
+0
+1
+6
+12
+4
+T
+16, 06, 68, 88, X, 89 What is X?
+80
+08
+78
+70
+3
+M
+Which of theses room are the safest? 
+A room filled with raging fires.
+A room filled with assassins with loaded guns.
+A room filled with lions who have not eaten in years.
+A room filled with posionous gases.
+3
+I

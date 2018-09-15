@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Canvas xmlns="http://www.jgrasp.org">
+  <Language>Java</Language>
+  <ShowTypes>false</ShowTypes>
+  <Version>2</Version>
+  <Grid>
+    <Snap>true</Snap>
+    <Show>false</Show>
+  </Grid>
+  <Scope id="0">
+    <Name>equalsForArrayTest</Name>
+    <Signature>()V</Signature>
+    <DeclaringType>TriangleTest</DeclaringType>
+    <Depth>31</Depth>
+  </Scope>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>320</X>
+      <Y>50</Y>
+      <W>264</W>
+      <H>122</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local Triangle[]` ta2</Expression>
+      <ViewerClass>_X_A_ToStringView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>40</X>
+      <Y>50</Y>
+      <W>264</W>
+      <H>122</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local Triangle[]` ta1</Expression>
+      <ViewerClass>_X_A_ToStringView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>40</X>
+      <Y>210</Y>
+      <W>264</W>
+      <H>122</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local Triangle[]` ta3</Expression>
+      <ViewerClass>_X_A_ToStringView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Size>
+    <W>663</W>
+    <H>600</H>
+  </Size>
+  <ESize>
+    <W>663</W>
+    <H>600</H>
+  </ESize>
+</Canvas>

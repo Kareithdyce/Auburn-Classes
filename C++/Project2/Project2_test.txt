@@ -1,0 +1,176 @@
+Confriming when the user doesn't exist
+
+Delete a user - User Name: branch
+1) Confirm
+2) Cancel
+
+        Please choose an option: 1
+Warning - User branch is not in the system. No user is deleted!
+Press any key to continue...
+
+Confriming when the user doesn't exist
+Delete a user - User Name: kzd0030
+1) Confirm
+2) Cancel
+
+        Please choose an option: 1
+User kzd0030 was deleted!
+Press any key to continue...
+
+Canceling
+Delete a user - User Name: kzd0030
+1) Confirm
+2) Cancel
+
+        Please choose an option: 2
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option:
+		
+		
+Entering a number with spaces		
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option: 1 1 1 1 1 1
+=============================================================
+|    Teller Terminal System – Client and Account Management |
+=============================================================
+1) Add a client
+2) Add an account
+3) Edit Client Information
+4) Manage an account
+5) Save Client and Account Information
+6) Exit
+
+        Please choose an option:		
+		
+		
+Normal Input
+
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option: 4
+There are 2 users in the system.
+User Name: user1 Role: Branch Staff
+User Name: admin Role: System Administrator
+Press any key to continue...
+
+Non Numbers input
+==========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option: dsaf
+Error invalid input
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option:
+Blank Response
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staff
+5) Change password
+6) Exit
+
+        Please choose an option:
+
+		
+		
+		
+(The system doesn't continue unless the response is non-blank)
+
+
+Blank Response followed by input
+===========================================================
+|     Teller Terminal System – System Administration      |
+===========================================================
+1) Client and Account Management
+2) Add a branch staff member
+3) Delete a branch staff member
+4) Display branch staffn option:
+5) Change password
+6) Exit
+
+        Please choose an option:
+
+
+
+
+
+3
+Delete a user - User Name:
+	
+First Run 	
+Initializing system. Please wait
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+System setup.
+Press any key to continue...
+===========================================================
+|     Welcome to the Auburn Branch of Tiger Bank!         |
+===========================================================
+1) Login
+2) Quit
+
+        Please choose an option:
+		
+		
+		
+Following runs
+===========================================================
+|     Welcome to the Auburn Branch of Tiger Bank!         |
+===========================================================
+1) Login
+2) Quit
+
+        Please choose an option:		

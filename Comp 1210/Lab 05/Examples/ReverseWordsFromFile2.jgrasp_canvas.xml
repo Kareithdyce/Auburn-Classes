@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Canvas xmlns="http://www.jgrasp.org">
+  <Language>Java</Language>
+  <ShowTypes>false</ShowTypes>
+  <Grid>
+    <Snap>true</Snap>
+    <Show>false</Show>
+  </Grid>
+  <Scope id="0">
+    <Name>main</Name>
+    <Signature>([Ljava/lang/String;)V</Signature>
+    <DeclaringType>ReverseWordsFromFile2</DeclaringType>
+    <Depth>0</Depth>
+  </Scope>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>250</Y>
+      <W>527</W>
+      <H>194</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.util.ArrayList` inputList</Expression>
+      <ViewerClass>java__lang__Object_LinkedView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>100</X>
+      <Y>80</Y>
+      <W>527</W>
+      <H>116</H>
+    </Bounds>
+    <LabelLoc>
+      <X>-1</X>
+      <Y>32</Y>
+      <H>LEFT</H>
+      <V>CENTER</V>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.util.Scanner` inFile</Expression>
+      <ViewerClass>java__util__Scanner_PresentationView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Size>
+    <W>800</W>
+    <H>760</H>
+  </Size>
+  <ESize>
+    <W>800</W>
+    <H>760</H>
+  </ESize>
+</Canvas>

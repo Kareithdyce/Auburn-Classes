@@ -1,0 +1,9 @@
+Amadeus,Drama,160 Mins.,1984,14.83
+As Good As It Gets,Drama,139 Mins.,1998,11.3
+Batman,Action,126 Mins.,1989,10.15
+Billy Elliot,Drama,111 Mins.,2001,10.23
+Blade Runner,Science Fiction,117 Mins.,1982,11.98
+Shadowlands,Drama,133 Mins.,1993,9.89
+Shrek,Animation,93 Mins,2001,15.99
+Snatch,Action,103 Mins,2001,20.67
+The Lord of the Rings,Fantasy,178 Mins,2001,25.87

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Canvas xmlns="http://www.jgrasp.org">
+  <Language>Java</Language>
+  <ShowTypes>false</ShowTypes>
+  <Version>2</Version>
+  <Grid>
+    <Snap>true</Snap>
+    <Show>false</Show>
+  </Grid>
+  <Scope id="0">
+    <Name>search</Name>
+    <Signature>(Ljava/util/List;Ljava/lang/Object;)I</Signature>
+    <DeclaringType>IteratorError</DeclaringType>
+    <Depth>1</Depth>
+  </Scope>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>290</Y>
+      <W>279</W>
+      <H>114</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.util.Iterator` itr</Expression>
+      <ViewerClass>_X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>180</X>
+      <Y>220</Y>
+      <W>74</W>
+      <H>45</H>
+    </Bounds>
+    <LabelLoc>
+      <WO>false</WO>
+    </LabelLoc>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local int` i</Expression>
+      <ViewerClass>_X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>60</Y>
+      <W>535</W>
+      <H>147</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.util.List` list</Expression>
+      <ViewerClass>java__lang__Object_LinkedView</ViewerClass>
+    </Viewer>
+    <ScopeTest>None</ScopeTest>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>50</X>
+      <Y>220</Y>
+      <W>112</W>
+      <H>45</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.lang.Object` target</Expression>
+      <ViewerClass>_X_ElementView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Size>
+    <W>671</W>
+    <H>551</H>
+  </Size>
+  <ESize>
+    <W>671</W>
+    <H>551</H>
+  </ESize>
+</Canvas>

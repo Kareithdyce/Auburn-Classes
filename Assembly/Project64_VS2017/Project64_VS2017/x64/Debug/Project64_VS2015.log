@@ -1,0 +1,5 @@
+﻿  Assembling ..\..\..\..\..\..\..\..\Irvine\ch03\AddTwoSum_64.asm...
+..\..\..\..\..\..\..\..\Irvine\ch03\AddTwoSum_64.asm(2): error A2008: syntax error : .
+..\..\..\..\..\..\..\..\Irvine\ch03\AddTwoSum_64.asm(3): error A2008: syntax error : .
+..\..\..\..\..\..\..\..\Irvine\ch03\AddTwoSum_64.asm(4): error A2008: syntax error : .
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(50,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo"x64\Debug\AddTwoSum_64.obj" /Fl"Project.lst" /I "c:\Irvine" /W3 /errorReport:prompt  /Ta..\..\..\..\..\..\..\..\Irvine\ch03\AddTwoSum_64.asm" exited with code 1.

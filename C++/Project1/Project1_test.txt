@@ -1,0 +1,228 @@
+Case 1.1
+        	Turns
+	
+1) Move forward(takes time)
+        	2) Read technical papers (boost intelligence, takes time)
+        	3) Search for loose change (boost money, takes time)
+        	4) View character
+        	5) Quit the game
+
+        	Please choose an action:	 
+
+For the above situation entering anything (even strings!) will cause the program to output a warning and then ask for the user to reenter their choice. Entering 1-5 will allow the program to function as usual. If the user enters a valid response and then a space or illegal character anything after the valid input should be ignored.(eg entering 1 should give the same result as 1 1 1 1 1).
+Actual Output
+Please choose an option: 1 1 1 1 1 1
+
+You take a deep breath and step into the dark unknown...
+Suddenly a stack of over 300 tests appears in front of you almost making you trip.
+Surprised you see your mentor looking upset telling you to have it done in 3 hours
+It takes a tremendous effort but you manage to finish just in the nick of time.
+You turn in the stack and receive $1.00 and then prepare yourself to continue the hallway.
+
+Works as intended
+
+Case 1.2
+Entering 1 Should bring up a random event that effects the character. This takes time as well and can modify other stats.
+
+
+You have:
+Intelligence: 15
+Time: 32
+Money: $15.00
+
+
+You are 19 steps from the goal. Time left 32.
+
+
+        1) Move forward (takes time)
+        2) Read technical papers (boost intelligence, takes time)
+        
+		3) Search for loose change (boost money, takes time)
+        4) View character
+        5) Quit the game
+
+        Please choose an option: 1
+
+You take a deep breath and step into the dark unknown...
+Suddenly a stack of over 300 tests appears in front of you almost making you trip.
+Surprised you see your mentor looking upset telling you to have it done in 1 hours
+It takes a tremendous effort but you manage to finish just in the nick of time.
+You turn in the stack and receive $4.00 and then prepare yourself to continue the hallway.
+
+You are 18 steps from the goal. Time left 31.
+
+
+        1) Move forward (takes time)
+        2) Read technical papers (boost intelligence, takes time)
+        3) Search for loose change (boost money, takes time)
+        4) View character
+        5) Quit the game
+
+        Please choose an option: 4
+
+You have:
+Intelligence: 15
+Time: 31
+Money: $19.00 
+Works as intended
+
+Case 1.3
+Entering 2 Increases the players intelligence stat at the cost of the time stat.
+You have:
+Intelligence: 15
+Time: 31
+Money: $19.00
+
+
+You are 18 steps from the goal. Time left 31.
+
+
+        1) Move forward (takes time)
+        2) Read technical papers (boost intelligence, takes time)
+        3) Search for loose change (boost money, takes time)
+        4) View character
+        5) Quit the game
+
+        Please choose an option: 2
+You read through some technical papers.
+Your intellect has increased by 5, but you lost 1 hours.
+
+
+You are 18 steps from the goal. Time left 30.
+
+You have:
+Intelligence: 20
+Time: 30
+Money: $19.00
+Works as intended
+Case 1.4
+Entering 3 Increases the players money stat at the cost of the time stat.
+
+You have:
+Intelligence: 15
+Time: 30
+Money: $24.00
+
+
+
+        Please choose an option: 3
+You looked on the ground for some loose change.
+You somehow found $5.00 in 1 hours. What good luck!
+
+You have:
+Intelligence: 15
+Time: 29
+Money: $29.00
+
+
+Entering 4 Displays the player current stats. This should not use up any time.
+Case 1.5
+	Please choose an option: 4
+Case 1.5
+You have:
+Intelligence: 15
+Time: 30
+Money: $24.00
+
+Case 1.6
+Entering 5 Exits the game. The high score is not saved.
+Works as intended
+
+Case 2 : Reading and Writing Files for High Scores
+Reading in a file with more than 10 scores.
+The program should read in the file for first 10 scores. Anything else will not be added.
+The top high scores are:
+
+Kareith 5852
+Erin 4961
+Kareith 4800
+Kareith 4560
+Kareith 4400
+devon 3198
+Smidge 2772
+Charles 1260
+Kareith 1170
+Kareith 1080
+
+Reading in an empty file
+The program should not see anything since the file is blank.
+The top high scores are:
+
+-no more scores to show-
+
+Reading a file that doesn’t exist
+The program should then create the top scores file so that the program can read it in.
+The top high scores are:
+
+-no more scores to show-
+
+Writing to a file with 10 scores already
+
+When writing to a file with 10 scores the current score should be compared to the existing scores and the list should be updated to reflect this. The top ten of the eleven scores should be written to the file.
+The top high scores are:
+Kareith 5852
+Erin 4961
+Kareith 4800
+Kayla 4600
+Kareith 4560
+Kareith 4400
+devon 3198
+Smidge 2772
+Charles 1260
+Kareith 1170
+
+
+Case 3
+
+You have:
+Intelligence: 15
+Time: 31
+Money: $19.00
+
+        Please choose an option: 2
+You read through some technical papers.
+Your intellect has increased by 5, but you lost 1 hours.
+
+You have:
+Intelligence: 20
+Time: 30
+Money: $19.00
+
+Case 4
+1 - Quit
+So Kareith, you had to quit tragic...
+Better luck next time...
+If you're brave enough to come back thats is!
+2 - int
+Your intelligence has dropped to zero! Sadly you also forgot how to breathe!
+Game Over
+
+3 - time 
+"Ding Dong Times Up! Your never leaving this hallway! Rot for the rest of etnerity!"
+Game Over
+
+4 - money 
+Your money is all gone! You manage to slowly escape the hallway but injured, weak, and hungry.
+Since you have no money you cannot get help and die.
+
+Case 5
+You hear an ominous voice in the wind.
+"Answer my question correctly or face my wrath!"
+What is 1 + 1 = ?
+
+        1)3
+        2)2
+        3)0
+        4)4
+		
+        Please choose an option: 2
+		
+Correct
+			"Correct...Lucky guess... I guess I should reward you or something..."
+You feel smarter! Intelligence has raised by 1 points!
+		
+Wrong
+	"Good guess... Too bad that's its wrong! Ha ha ha!
+Now let's see what you have to offer..."
+You feel knowledge slipping away from you! Intelligence has dropped by 3 points!
+		

@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<title>Academic Transcript</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>Auburn University</h1></DIV><div class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<map name="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<a href="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</a>
+<table  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<TD CLASS="pldefault">
+<table  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td class="taboff" height=22>
+<a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onMouseover="window.status='Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Personal Information'; return true" onBlur="window.status=''; return true" >Personal Information</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="tabon"  height=22>
+<a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onMouseover="window.status='Student'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student'; return true" onBlur="window.status=''; return true" >Student</a>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onMouseover="window.status='Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid'; return true" onBlur="window.status=''; return true" >Financial Aid</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_ProxyMenu" onMouseover="window.status='Gateway to Grades'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Gateway to Grades'; return true" onBlur="window.status=''; return true" >Gateway to Grades</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+</tr>
+</table>
+</TD>
+</tr>
+<tr>
+<TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+</map>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<table  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<div class="headerlinksdiv2">
+<form action="/pls/PROD/twbksrch.P_ShowResults" method="post">
+Search
+<SPAN class="fieldlabeltextinvisible"><LABEL for=keyword_in_id><SPAN class="fieldlabeltext">Search</SPAN></LABEL></SPAN>
+<input type="text" name="KEYWRD_IN" size="20" maxlength="65" ID="keyword_in_id" />
+<input type="submit" value="Go" />
+</form>
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<SPAN class="pageheaderlinks">
+<a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</a>
+|
+<a href="/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</a>
+|
+<a href="/pls/PROD/twbkfrmt.P_DispHelp?pagename_in=bwskotrn.P_ViewTran" accesskey="H" onClick="popup = window.open('/pls/PROD/twbkfrmt.P_DispHelp?pagename_in=bwskotrn.P_ViewTran', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</a>
+|
+<a href="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</TD>
+</tr>
+</table>
+</DIV>
+<div class="pagetitlediv">
+<table  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<h2>Unofficial Academic Transcript <p> Auburn University</h2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<div class="staticheaders">
+903700162 Kareith Dyce<br>
+Dec 27, 2017 06:10 pm<br>
+</div>
+</TD>
+</tr>
+<tr>
+<TD class="bg3" width="100%" colSpan=3><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD>
+</tr>
+</table>
+<a name="main_content"></a>
+</DIV>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<div class="infotextdiv"><table  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><tr><td CLASS="indefault"><img src="/wtlgifs/web_info_cascade.png" alt="Information" CLASS="headerImg" TITLE="Information"  NAME="web_info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=12 WIDTH=14 /></td><td CLASS="indefault"><SPAN class="infotext">  This is not an official transcript. Courses which are in progress may also be included on this transcript.
+<p>
+1. Transfer Credit - If you have transfer credit posted from another college you may see the following codes:
+<ul>
+<li><b>PEND</b> – This is a course that has not yet been evaluated to determine the AU equivalent. Once an equivalent course has been determined, the AU course will show on the transcript in place of the PEND.</li>
+
+<li><b>NOCR</b> – This is a course for which Auburn University does not give transfer credit.</li>
+
+<li><b>GEEL</b> – This is a course for which there is not an exact AU equivalent, but for which AU gives “general elective” credit. It may or may not satisfy particular program requirements.</li>
+
+<li><b>EVAL HOLD</b> – Credit may be awarded for this course in special circumstances. It needs to be individually evaluated. </li>
+</ul>
+2. Courses Repeated at AU - These are undergraduate courses that have been taken more than one time at AU. All courses repeated at AU will have one of  the following notations (see exception below for graduate students taking undergraduate courses):
+
+<ul>
+<li><b>A</b> – The course is not counted in earned hours, but is included in the AU gpa.</li>
+<li><b>E</b> – The course is not included in either earned hours or the AU gpa. <b>*</b></li>
+<li><b>I</b> – The course is included in both earned hours and the AU gpa.</li>
+</ul> 
+
+* The "E" code may be used for graduate students taking undergraduate courses (even though these courses are not repeated).
+</SPAN></td></tr></table><p></DIV>
+<table  CLASS="plaintable" summary="This layout table holds message information">
+<tr>
+<TD CLASS="pldefault">
+<img src="/wtlgifs/web_stop_cascade.png" alt="Stop" CLASS="headerImg" TITLE="Stop"  NAME="web_stop" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=13 WIDTH=13 />
+</TD>
+<TD CLASS="pldefault">
+<SPAN class="errortext">Transcript not available</SPAN>
+<br />
+</TD>
+</tr>
+</table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><tr><TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+<a href="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+</DIV>
+<div class="footerbeforediv">
+
+</DIV>
+<div class="footerlinksdiv">
+<SPAN class="pagefooterlinks">
+<map name="Academic_Transcript_Links_F" title="Academic Transcript Links">
+<p>
+<a href="#skip_Academic_Transcript_Links_F" onMouseover="window.status='Skip Academic Transcript Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Academic Transcript Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Academic Transcript Links</a>
+<P>[ <a href="/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_FACostMnu" onMouseover="window.status='Financial Aid Eligibility Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid Eligibility Menu'; return true" onBlur="window.status=''; return true" >Financial Aid Eligibility Menu</a>
+ ]
+</map>
+</SPAN>
+<a name="skip_Academic_Transcript_Links_F"></a>
+</DIV>
+<div class="footerafterdiv">
+
+</DIV>
+<div class="globalafterdiv">
+
+</DIV>
+<div class="globalfooterdiv">
+
+</DIV>
+<div class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.7.1</SPAN>
+</DIV>
+<div class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2017 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</body>
+</html>

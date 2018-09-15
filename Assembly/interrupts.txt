@@ -1,0 +1,38 @@
+Interrupts 
+	chp 16,pg 597
+
+cli		; IF=0; interrupts are disabled
+mov ax, mystack	; interrupts are masked
+mov ss, ax	 	; set stack to enable save and 
+mov sp, 100h	; restore of CS+IP on an ISR call/return
+
+sti		; IF =1; enabled	
+;rti		; last instruction of an ISR, return from ISR
+
+Types:
+hardware and software interrupts
+maskable and nonmaskable
+
+int 21h  ;software vectored interrupt;  ip = 21*4h = 81h
+Non maskable interrupts: trap (soft), reset (hard), NMI (hard)
+
+------------------- Uses----------------------------
+example use: exit to dos
+mov ah,9
+int 21h
+---------
+Uses of interrupts
+---external--timing
+	  --error control
+	  --device driver
+---internal 
+          	  ---overflow, underflow
+	  ---bios programming
+-------------------------------------------------------
+
+
+
+
+
+
+		
