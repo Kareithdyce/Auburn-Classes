@@ -22,8 +22,8 @@ public class ExampleClient {
    /** Drives execution. */
    public static void main(String[] args) throws FileNotFoundException {
       WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
-
-      System.out.println(doublets.getHammingDistance("tiger", "tiger"));
+      System.out.println(doublets.getNeighbors("cool"));
+      /*System.out.println(doublets.getHammingDistance("tiger", "tiger"));
       System.out.println(doublets.getHammingDistance("tiger", "eagle"));
       System.out.println(doublets.getHammingDistance("war", "eagle"));
       System.out.println(doublets.getHammingDistance("barner", "bammer"));
@@ -40,8 +40,8 @@ public class ExampleClient {
       System.out.println(doublets.isWordLadder(Arrays.asList("cat", "cot", "zot", "dot")));
       System.out.println(doublets.isWordLadder(Arrays.asList("cat", "cot", "pot", "dot")));
 
-      //System.out.println(doublets.getNeighbors("money"));
-      //System.out.println(doublets.getNeighbors("poney"));
+      System.out.println(doublets.getNeighbors("money"));
+      System.out.println(doublets.getNeighbors("poney"));
 
       System.out.println(doublets.getMinLadder("cat", "hat"));
       System.out.println(doublets.getMinLadder("cold", "warm"));
@@ -52,9 +52,9 @@ public class ExampleClient {
       System.out.println(doublets.getMinLadder("aa", "aa"));
       System.out.println(doublets.getMinLadder("aa", "aa"));
       System.out.println(doublets.getMinLadder("open", "ohed"));
-      System.out.println(doublets.isWordLadder(doublets.getMinLadder("open", "shut")));
       System.out.println(doublets.getMinLadder("charge", "comedo"));
-
+      */
+      System.out.println(doublets.getMinLadder("open", "shut"));
 
    }
 }
