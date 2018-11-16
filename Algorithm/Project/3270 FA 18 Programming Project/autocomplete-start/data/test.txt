@@ -1,3 +1,8 @@
-2
-   15	hello
-   5	goodbye
+7
+   6	ape
+   4	app
+   2	ban
+   3	bat
+   5	bee
+   7	car
+   1	cat
