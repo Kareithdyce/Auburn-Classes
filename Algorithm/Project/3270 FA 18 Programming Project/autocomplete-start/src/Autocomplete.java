@@ -434,7 +434,26 @@ public class Autocomplete {
        */
       public Iterable<String> topMatches(String prefix, int k) {
         ArrayList<String> list = new ArrayList<String>();
-        PriorityQueue<Node> q = new PriorityQueue<Node>(); 
+        PriorityQueue<Node> q = new PriorityQueue<Node>(new Node.ReverseSubtreeMaxWeightComparator());
+        PriorityQueue<Term> qT = new PriorityQueue<Term>(new Term.ReverseWeightOrder());
+
+        Node look = myRoot;  
+         for(int i = 0; i < prefix.length(); i++){
+            look = look.getChild(prefix.charAt(i));
+            if(look == null){
+                return list;
+            }
+         }
+        q.add(look);
+        while(!q.isEmpty() && list.size() < k){
+            Node n = q.poll();
+            if(n.isWord){
+                qT.add(new Term(n.getWord(), n.getWeight()));
+            }
+            for(Node c :  n.children.values()){
+                q.add(c);
+            }
+        }
         return list;
       }
    
@@ -471,7 +490,7 @@ public class Autocomplete {
             //return "RAN OUT OF WORDS"; // Ran out of words to look at;
 
         }
-         return "LOLIDK";
+         return "????";
       }
    
       /**

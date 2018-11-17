@@ -11,7 +11,7 @@ import javax.swing.SwingUtilities;
 public class AutocompleteMain {
 
 	/* Modify K as necessary */
-	static int K = 2;
+	static int K = 10;
 
 	final static String BRUTE_AUTOCOMPLETE = "Autocomplete$BruteAutocomplete";
 	final static String BINARY_SEARCH_AUTOCOMPLETE = "Autocomplete$BinarySearchAutocomplete";
