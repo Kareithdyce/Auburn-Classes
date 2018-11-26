@@ -1,6 +1,22 @@
-Name: firstname lastname
-AUID: abc123
-Hours Spent: Give an exact (decimal) number here
-Consulted With: provide names or AUID of any students, TAs, or professors you consulted with on the assignment. If you did not consult with anyone, you must explicitly write NONE.
-Resources Used: Any books, papers, or online resources. If you did not use any outside resources, you must explicitly write NONE 
-Impressions: Your answer here
+Name: Kareith Dyce
+AUID: kzd0030
+Hours Spent: 15 
+Consulted With: NONE
+Resources Used: NONE 
+Impressions: The project was much simpler than I thought it would be and the only things I really found difficult was the 
+write-up after the coding
+NO-PLAGIARISM CERTIFICATION: I certify that I wrote the code I am submitting. I
+did not copy whole or parts of it from another student or have another person
+write the code for me. Any code I am reusing in my program from the web or
+some other source is clearly marked as such with its source clearly identified in
+comments.
+
+Autocomplete.java
+test.java //My test cases
+AutocompleteGUI.java
+AutocompleteMain.java
+Node.java
+Term.java
+AutocompletorBenchmark.java
+
+Complied Using Jgrasp

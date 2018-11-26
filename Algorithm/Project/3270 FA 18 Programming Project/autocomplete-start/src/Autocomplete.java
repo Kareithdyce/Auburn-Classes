@@ -324,24 +324,7 @@ public class Autocomplete {
          for (int i = 0; i < terms.length; i++) {
             //System.out.println(terms[i]);
             add(terms[i], weights[i]);
-         }
-         System.out.println("Max Weight: " + myRoot.mySubtreeMaxWeight);
-         System.out.println("App Weight: " + weightOf("app"));
-         System.out.println("Hello Weight: " + weightOf("hello"));
-         System.out.println("Top match of h: " + topMatch("h"));
-         System.out.println("Top match of a: " + topMatch("a") + ": " +weightOf(topMatch("a")));
-         System.out.println("Top match of \"\": " +topMatch("") + ": " +weightOf(topMatch("")));
-         System.out.println("Top match of ap: " + topMatch("ap") + ": " +weightOf(topMatch("ap")));
-         System.out.println("Top match of at: " +topMatch("at") + ": " +weightOf(topMatch("at")));
-         System.out.println("Top match of b: " + topMatch("b") + ": " +weightOf(topMatch("b")));
-         System.out.println("Top match of ba: " + topMatch("ba") + ": " +weightOf(topMatch("ba")));
-         System.out.println("Top match of c: " + topMatch("c") + ": " +weightOf(topMatch("c")));
-         System.out.println("Top match of ca: " + topMatch("ca") + ": " +weightOf(topMatch("ca")));
-         System.out.println("Top match of d: " + topMatch("d") + ": " +weightOf(topMatch("d")));
-         System.out.println("Top match of cat: " + topMatch("cat") + ": " +weightOf(topMatch("cat")));
-         System.out.println("Top match of \" \": " + topMatch(" ") + ": " +weightOf(topMatch(" ")));
-         
-         
+         }     
       }
    
       /**
@@ -362,11 +345,10 @@ public class Autocomplete {
        *             IllegalArgumentException if weight is negative.
        */
       private void add(String word, double weight) {
-      
          Node curr = myRoot;
          if(weight > curr.mySubtreeMaxWeight){
             curr.mySubtreeMaxWeight = weight;
-            curr.setWeight(weight);
+            //curr.setWeight(weight);
          }
          for(int i = 0; i < word.length(); i++){
             char look = word.charAt(i);
@@ -397,7 +379,13 @@ public class Autocomplete {
          }
       
       }
-      /* Updates the max weight */   
+      /** Updates the max weight of the Trie recursively for all nodes when a word's
+      * mySubtreeMaxWeight is lowered.
+      * 
+      *  @param Node - 
+      *                the node to search
+      * 
+      */   
       private void findMaxWeight(Node n){
          boolean change = false;
          for(Node c : n.children.values()){
@@ -406,6 +394,8 @@ public class Autocomplete {
                change = true;
             } 
          }
+         //If the you are not are the root and the value of mySubtreeMaxWeight was changed
+         //then repeat the process  
          if(n.parent != null && change){
             n.parent.mySubtreeMaxWeight = n.mySubtreeMaxWeight;
             findMaxWeight(n.parent);
@@ -433,28 +423,51 @@ public class Autocomplete {
        *             NullPointerException if prefix is null
        */
       public Iterable<String> topMatches(String prefix, int k) {
-        ArrayList<String> list = new ArrayList<String>();
-        PriorityQueue<Node> q = new PriorityQueue<Node>(new Node.ReverseSubtreeMaxWeightComparator());
-        PriorityQueue<Term> qT = new PriorityQueue<Term>(new Term.ReverseWeightOrder());
-
-        Node look = myRoot;  
+         ArrayList<String> list = new ArrayList<String>();
+         PriorityQueue<Node> q = new PriorityQueue<Node>(new Node.ReverseSubtreeMaxWeightComparator());
+         PriorityQueue<Term> qT = new PriorityQueue<Term>(new Term.ReverseWeightOrder());
+      
+         Node look = myRoot;  
          for(int i = 0; i < prefix.length(); i++){
             look = look.getChild(prefix.charAt(i));
             if(look == null){
-                return list;
+               return list;
             }
          }
-        q.add(look);
-        while(!q.isEmpty() && list.size() < k){
+         q.add(look);
+         while(!q.isEmpty() && list.size() < k){
             Node n = q.poll();
-            if(n.isWord){
-                qT.add(new Term(n.getWord(), n.getWeight()));
-            }
             for(Node c :  n.children.values()){
-                q.add(c);
+               q.add(c);
             }
-        }
-        return list;
+            if(n.isWord && n.getWeight() != n.mySubtreeMaxWeight){
+               if(n.getWeight() > n.mySubtreeMaxWeight){
+                  System.out.println("Your code is wrong lol");
+                   //Error Testing
+                   //Should never trigger
+                   //...hopefully
+               }
+               qT.add(new Term(n.getWord(), n.getWeight()));
+            }else if(n.isWord){
+               list.add(n.getWord());
+                //System.out.println(n.getWord());
+               if(list.size() == k){
+                  return list;
+               }  
+            }
+            if(!qT.isEmpty() && !q.isEmpty()){
+               while(qT.peek().getWeight() >= q.peek().mySubtreeMaxWeight){
+                  list.add(qT.poll().getWord());
+                  if(list.size() == k){
+                     return list;
+                  }
+                  if(qT.isEmpty()){
+                     break;
+                  }
+               }
+            }
+         }
+         return list;
       }
    
       /**
@@ -473,23 +486,24 @@ public class Autocomplete {
          for(int i = 0; i < prefix.length(); i++){
             n = n.getChild(prefix.charAt(i));
             if(n == null){
-                return "NO PREFIX";
+               return "";
+               //Means there are words that match current prefix.
             }
          }
          double max = n.mySubtreeMaxWeight;
          while(n!= null){
             if(n.isWord && n.getWeight() == max){
-                return n.getWord();
+               return n.getWord();
             }
             for(Node c : n.children.values()){
-                if(max == c.mySubtreeMaxWeight){
-                    n = c;
-                    break;
-                }
+               if(max == c.mySubtreeMaxWeight){
+                  n = c;
+                  break;
+               }
             }
-            //return "RAN OUT OF WORDS"; // Ran out of words to look at;
-
-        }
+         }
+         //Should never get to this point
+         //if so it is an error 
          return "????";
       }
    
@@ -498,15 +512,15 @@ public class Autocomplete {
        * return 0.0
        */
       public double weightOf(String term) {
-        Node n = myRoot;  
-        for(int i = 0; i < term.length(); i++){
+         Node n = myRoot;  
+         for(int i = 0; i < term.length(); i++){
             n = n.getChild(term.charAt(i));
             if(n == null){
-                return 0.0;
+               return 0.0;
             }
          }
          if(n.isWord){
-             return n.getWeight();
+            return n.getWeight();
          }
          return 0.0;
       }

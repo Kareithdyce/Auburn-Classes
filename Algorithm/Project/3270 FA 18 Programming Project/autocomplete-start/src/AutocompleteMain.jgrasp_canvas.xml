@@ -7,128 +7,108 @@
     <Snap>true</Snap>
     <Show>false</Show>
   </Grid>
+  <Scope id="1">
+    <Name>topMatches</Name>
+    <Signature>(Ljava/lang/String;I)Ljava/lang/Iterable;</Signature>
+    <DeclaringType>Autocomplete$TrieAutocomplete</DeclaringType>
+    <Depth>36</Depth>
+  </Scope>
   <Scope id="0">
-    <Name>add</Name>
-    <Signature>(Ljava/lang/String;D)V</Signature>
+    <Name>topMatches</Name>
+    <Signature>(Ljava/lang/String;I)Ljava/lang/Iterable;</Signature>
     <DeclaringType>Autocomplete$TrieAutocomplete</DeclaringType>
     <Depth>22</Depth>
-  </Scope>
-  <Scope id="1">
-    <Name>&lt;init&gt;</Name>
-    <Signature>([Ljava/lang/String;[D)V</Signature>
-    <DeclaringType>Autocomplete$TrieAutocomplete</DeclaringType>
-    <Depth>21</Depth>
   </Scope>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>310</X>
-      <Y>190</Y>
-      <W>426</W>
+      <X>50</X>
+      <Y>130</Y>
+      <W>272</W>
       <H>322</H>
     </Bounds>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local Node` curr</Expression>
+      <Expression>`local Node` look</Expression>
       <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
     </Viewer>
   </Frame>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
-      <X>80</X>
-      <Y>160</Y>
-      <W>118</W>
-      <H>52</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local java.lang.String` word</Expression>
-      <ViewerClass>jgrasp_viewers.java__lang__String_FormattedView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>190</X>
-      <Y>100</Y>
-      <W>954</W>
-      <H>290</H>
+      <X>210</X>
+      <Y>560</Y>
+      <W>779</W>
+      <H>224</H>
     </Bounds>
     <Viewer>
       <ScopeID>1</ScopeID>
-      <Expression>this.myRoot.children</Expression>
+      <Expression>`local java.util.PriorityQueue` q</Expression>
       <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>360</X>
-      <Y>430</Y>
-      <W>373</W>
-      <H>456</H>
-    </Bounds>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>this.myRoot</Expression>
-      <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
+      <ViewerData>
+        <ViewData>
+          <Vertical>false</Vertical>
+          <Embedded>false</Embedded>
+          <Round>false</Round>
+        </ViewData>
+      </ViewerData>
     </Viewer>
   </Frame>
   <Frame>
     <Bounds>
       <AutoSize>true</AutoSize>
       <X>580</X>
-      <Y>90</Y>
-      <W>118</W>
-      <H>54</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local double` weight</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>70</X>
-      <Y>260</Y>
-      <W>118</W>
-      <H>54</H>
-    </Bounds>
-    <LabelLoc>
-      <WO>false</WO>
-    </LabelLoc>
-    <Viewer>
-      <ScopeID>0</ScopeID>
-      <Expression>`local char` look</Expression>
-      <ViewerClass>jgrasp_viewers._X_ElementView</ViewerClass>
-    </Viewer>
-  </Frame>
-  <Frame>
-    <Bounds>
-      <AutoSize>true</AutoSize>
-      <X>150</X>
-      <Y>410</Y>
-      <W>136</W>
-      <H>188</H>
+      <Y>80</Y>
+      <W>375</W>
+      <H>322</H>
     </Bounds>
     <Viewer>
       <ScopeID>0</ScopeID>
-      <Expression>`local Node` curr.children</Expression>
+      <Expression>`local Node` n</Expression>
       <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
     </Viewer>
   </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>220</X>
+      <Y>110</Y>
+      <W>662</W>
+      <H>213</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>1</ScopeID>
+      <Expression>`local java.util.ArrayList` list</Expression>
+      <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
+    </Viewer>
+  </Frame>
+  <Frame>
+    <Bounds>
+      <AutoSize>true</AutoSize>
+      <X>210</X>
+      <Y>340</Y>
+      <W>779</W>
+      <H>224</H>
+    </Bounds>
+    <Viewer>
+      <ScopeID>0</ScopeID>
+      <Expression>`local java.util.PriorityQueue` qT</Expression>
+      <ViewerClass>jgrasp_viewers.java__lang__Object_LinkedView</ViewerClass>
+      <ViewerData>
+        <ViewData>
+          <Vertical>false</Vertical>
+          <Embedded>false</Embedded>
+          <Round>false</Round>
+        </ViewData>
+      </ViewerData>
+    </Viewer>
+  </Frame>
   <Size>
-    <W>964</W>
-    <H>792</H>
+    <W>978</W>
+    <H>1030</H>
   </Size>
   <ESize>
-    <W>964</W>
-    <H>792</H>
+    <W>978</W>
+    <H>1030</H>
   </ESize>
 </Canvas>

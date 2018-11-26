@@ -1,0 +1,19 @@
+1.Elf magic numbers are 0x7f, E, L, F. They are byte offsets within the e_ident[].
+2.UIO_USERISPACE has user process code
+UIO_USERSPACE has user process data
+UIO_SYSSPACE should be used when working with the Kernel(data).
+3.It is loaded at a virtual address which allows the uio to access. 
+This uio struct is what goes to the stack.
+4.We need to close the file so other threads can use the file after the current one. 
+5.mips_usermode() No it is machine independent as all the interrupts are machine independent.	
+6.copinout.c - has copyin() and copyout()
+memmove is found in memmove.c. copyin()/copyout() do their opperations from user to
+kernel making user pointer do not access offlimit kernel addresses. memmove is unable to do this.  
+7.userptr_t keeps the provided address within the proper userspace area.
+1.8
+2.So that it can later turn off interrupts while keeping the value of curspl.
+3.4 BYTES
+4.The kernel should not panic at the user level.
+5.Additional arguments would  need to start at sp+16 from the user stack
+1.Load the number into v0(the register) and then we jump into the shared code.
+2.Line 72 of mips-crt0.S
