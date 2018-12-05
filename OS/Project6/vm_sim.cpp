@@ -49,7 +49,7 @@ int searchTLB(page_t page, tlb_t t, frame_t &frame){
             break;
         }
         if(t.tlb_entry[i].page_num == page){
-            frame = t.tlb_entry[i].frame_num;
+            frame= t.tlb_entry[i].frame_num;
             return 0;
         }
     }
