@@ -13,10 +13,5 @@ comments.
 
 Autocomplete.java
 test.java //My test cases
-AutocompleteGUI.java
-AutocompleteMain.java
-Node.java
-Term.java
-AutocompletorBenchmark.java
 
 Complied Using Jgrasp

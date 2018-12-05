@@ -1,7 +1,7 @@
 public class test{
     public static void main(String[] args) {
-        double [] values = {6,4,2,3,5,7,1};
-        String [] words = {"ape","app","ban","bat","bee","car","cat"};
+        double [] values = {1,4,2,3,5,7,1,6};
+        String [] words = {"ape","app","ban","bat","bee","car","cat","ape"};
         Autocomplete$TrieAutocomplete t = new Autocomplete.TrieAutocomplete(words,values);
         System.out.println("Top match of \"\" is correct: " + t.topMatch("").equals("car"));
         System.out.println("Top match of a is correct: " + t.topMatch("a").equals("ape"));
