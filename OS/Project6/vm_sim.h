@@ -24,11 +24,11 @@ typedef unsigned int frame_t;
 typedef unsigned int offset_t;
 
 typedef unsigned char byte_t;
-
 typedef struct{
     page_t page_num;
     frame_t frame_num;
     bool valid;
+    int counter;
 }tlb_entry_t;
 
 typedef struct {    
@@ -47,7 +47,6 @@ typedef struct {
 
 typedef struct {    
     tlb_entry_t pages[NUM_PAGES];
-    //vector<int> pageHit = vector<int>(256,0);
     /* next candidate entry to be replaced/used */
     unsigned int next_ptr;
 }page_table_t;
@@ -64,6 +63,7 @@ int initTLB(tlb_t &t);
 int searchTLB(page_t page, tlb_t &t, frame_t &frame, page_table_t &table);
 int TLB_display(tlb_t tlb);
 int TLB_replacement_FIFO(page_t page_num, frame_t frame_num, tlb_t  &t);
+int TLB_replacement_LRU(page_t page_num, frame_t frame_num, tlb_t  &t);
 
 /* Page Table*/
 int init_pageTable(page_table_t &pageTable);

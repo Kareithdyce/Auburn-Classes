@@ -1,0 +1,14 @@
+1) I used the formulas given by the professor.
+2) I used Structs that contained arrays of page_table_entries.
+3) I believe so.
+4) Yes
+5) FIFO strategy thus the tlb entry that was inserted first
+
+1) It is general for the FIFO to LRU.
+2)Just change the TLB marco
+3)Yes
+4)
+
+1)I would like to believe so. I followed all code writing instructions.
+2)No not really I followed all resources carefully
+3)No outide sources used.
