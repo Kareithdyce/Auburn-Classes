@@ -216,14 +216,7 @@ int main(){
     /*Initialize the system*/
     initTLB(tlb);
     init_pageTable(pageTable);
-    cout<<"Welcome to Kareith's VM Simulator Version 1.0"<<endl;
-    cout<<"Number of logical pages: "<<NUM_PAGES<<endl;
-    cout<<"Page size: "<<PAGE_SIZE<<" bytes"<<endl;
-    cout<<"Page table size: "<<NUM_PAGES<<endl;
-    cout<<"TLB size: "<<TLB_SIZE<<" entries"<<endl;
-    cout<<"Number of physical frames: "<<NUM_FRAMES<<endl;
-    cout<<"Physical memory size: "<<PHYS_MEM<<" bytes"<<endl<<endl;
-    cout<<"Display Physical Addresses? [yes or no] ";
+    welcomeMessage();
     string ans = "";
     cin>>ans;
     do{
