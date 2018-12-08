@@ -4,6 +4,7 @@
  * By Kareith Dyce
  */
 
+#include "intro.h"
 #include "vm_sim.h"
 #include <string>
 #include <vector>
@@ -60,19 +61,23 @@ int TLB_replacement_FIFO(page_t page, frame_t frame, tlb_t &t){
 }
 
 int TLB_replacement_LRU(page_t page, frame_t frame, tlb_t &t){
-    int i = 0;
-    if(!t.tlb_entry[t.next_tlb_ptr].valid){
-        t.next_tlb_ptr = ((t.next_tlb_ptr+1) % TLB_SIZE);
-        return 0; 
-    }  
+    int i = 0, max = 0, index = 0;  
     for(i; i < TLB_SIZE; i++){
         if(!t.tlb_entry[i].valid){
-        t.tlb_entry[i].valid = true;
-        t.tlb_entry[i].page_num = page;
-        t.tlb_entry[i].frame_num = frame;
-        t.tlb_entry.counter++;
+            t.tlb_entry[i].valid = true;
+            t.tlb_entry[i].page_num = page;
+            t.tlb_entry[i].frame_num = frame;
+            t.tlb_entry[i].counter = 0;
+            return 0;
+        }
+        if(t.tlb_entry[i].counter > max){
+            index = i;
+            max = t.tlb_entry[i].counter;
         }
     }
+    t.tlb_entry[index].page_num = page;
+    t.tlb_entry[index].frame_num = frame;
+    t.tlb_entry[index].counter = 0;
     return 0;
 }
 
