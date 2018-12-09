@@ -3,7 +3,9 @@
  * This is my main method which runs everything
  * By Kareith Dyce
  */
-
+#define MAKEFILE
+//Commet this out to use makefile It wouldn't work 
+//on my computer
 #include "intro.h"
 #include "vm_sim.h"
 #include <string>
@@ -216,7 +218,18 @@ int main(){
     /*Initialize the system*/
     initTLB(tlb);
     init_pageTable(pageTable);
-    welcomeMessage();
+    #ifdef MAKEFILE
+    //welcomeMessage();
+    #else
+    cout<<"Welcome to Kareith's VM Simulator Version 1.0"<<endl;
+    cout<<"Number of logical pages: "<<NUM_PAGES<<endl;
+    cout<<"Page size: "<<PAGE_SIZE<<" bytes"<<endl;
+    cout<<"Page table size: "<<NUM_PAGES<<endl;
+    cout<<"TLB size: "<<TLB_SIZE<<" entries"<<endl;
+    cout<<"Number of physical frames: "<<NUM_FRAMES<<endl;
+    cout<<"Physical memory size: "<<PHYS_MEM<<" bytes"<<endl<<endl;
+    cout<<"Display Physical Addresses? [yes or no] ";
+    #endif
     string ans = "";
     cin>>ans;
     do{
@@ -234,7 +247,7 @@ int main(){
         extract_laddress(laddressList.aList.at(i), page_num, offset);
         searchTLB(page_num, tlb, frame_num, pageTable);
         create_paddress(frame_num,offset, paddress);
-        if(ans == "yes"){
+        if(ans == "yes" || ans == "yes"){
             printf("Virutal Address: %d Physical address: %d Value: %d\n", laddressList.aList.at(i), paddress, mainMem[page_num][offset]);
         }
     }

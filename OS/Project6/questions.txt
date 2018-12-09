@@ -4,11 +4,18 @@
 4) Yes
 5) FIFO strategy thus the tlb entry that was inserted first
 
-1) It is general for the FIFO to LRU.
+1) It is general for the FIFO to LRU. For the file names it is not generals
 2)Just change the TLB marco
 3)Yes
-4)
+4)No since the virtual address's are matched one to one. Entering a duplicate virtual address
+should result in a duplicate physical address.
 
 1)I would like to believe so. I followed all code writing instructions.
 2)No not really I followed all resources carefully
-3)No outide sources used.
+3)Yes for makefiles as shown below.
+
+
+For the makefile I kept getting an error stating that "I had an undefined reference to `welcomeMessage()'"
+When I went online and copied the sample code makefile at http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+it also didn't work stating the same error. As such I have inlcuded the make file but unless you uncomment line
+6 it won't do anything. 

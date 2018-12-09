@@ -1,5 +1,4 @@
 CC=g++
 CFLAGS=-I.
-
-vm_sim: intro.o vm_sim.o
-     $(CC) -o vm_sim intro.o vm_sim.o
+vm_sim: vm_sim.o intro.o 
+     $(CC) -o vm_sim vm_sim.o intro.o
