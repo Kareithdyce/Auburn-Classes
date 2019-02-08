@@ -243,11 +243,14 @@ int main(){
     laddressLoader(input_file, laddressList);
     int i = 0;
     float size = laddressList.aList.size();
+    ofstream read;
+    read.open((char*)file.c_str());
     for(i; i < size; i++){
         extract_laddress(laddressList.aList.at(i), page_num, offset);
         searchTLB(page_num, tlb, frame_num, pageTable);
         create_paddress(frame_num,offset, paddress);
-        if(ans == "yes" || ans == "yes"){
+        
+        if(ans == "yes" || ans == "y"){
             printf("Virutal Address: %d Physical address: %d Value: %d\n", laddressList.aList.at(i), paddress, mainMem[page_num][offset]);
         }
     }

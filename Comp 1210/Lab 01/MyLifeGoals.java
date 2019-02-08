@@ -20,7 +20,7 @@ public class MyLifeGoals
    {
       System.out.println("Kareith Dyce\n");
       System.out.println("My short-terms goals before the end of"
-                       + " the semester are getting on to the dean’s list this"
+                       + " the semester are getting on to the deanï¿½s list this"
                        + " semester. I also plan to not run out of money on my" 
                        + " meal plan.");
       System.out.println("My medium-term goals include graduating"
