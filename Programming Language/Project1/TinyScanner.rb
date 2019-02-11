@@ -29,19 +29,24 @@ class Scanner
 		# Need to modify this code so that the program
 		# doesn't abend if it can't open the file but rather
 		# displays an informative message
-		@f = File.open(filename,'r:utf-8')
 		
-		# Go ahead and read in the first character in the source
-		# code file (if there is one) so that you can begin
-		# lexing the source code file 
-		if (! @f.eof?)
-			@c = @f.getc()
+		if !File.exist?(filename)
+			puts "No file found"
 		else
-			@c = "!eof!"
-			@f.close()
+
+			@f = File.open(filename,'r:utf-8')
+			
+			# Go ahead and read in the first character in the source
+			# code file (if there is one) so that you can begin
+			# lexing the source code file 
+			if (! @f.eof?)
+				@c = @f.getc()
+			else
+				@c = "!eof!"
+				@f.close()
+			end
 		end
 	end
-	
 	# Method nextCh() returns the next character in the file
 	def nextCh()
 		if (! @f.eof?)
@@ -67,9 +72,67 @@ class Scanner
 				nextCh()
 			end
 		
-			tok = Token.new(Token::WS,str)
-			return tok
-		# elsif ...
+			return Token.new(Token::WS,str)
+		 elsif letter?(@c)
+			str = ""
+			
+			while(letter?(@c))
+				str += @c
+				nextCh()
+			end
+			if str =~ /print/
+				return Token.new(Token::PRINT, str)
+			end	
+			
+			return Token.new(Token::VAR,str)
+			
+		elsif (numeric?(@c))
+			str = ""
+			
+			while(numeric?(@c))
+				str += @c
+				nextCh()
+			end
+
+			tok = Token.new(Token::INT,str)
+
+		elsif @c =~ /^[(]$/ 
+			str = "("
+			nextCh()
+			return Token.new(Token::LPAREN,str)
+
+		elsif @c =~ /^[)]$/ 
+			str = ")"
+			nextCh()
+			return Token.new(Token::RPAREN,str)
+		
+		elsif @c =~ /^[=]$/ 
+			str = "="
+			nextCh()
+			return Token.new(Token::EQUAL,str)
+		
+		elsif @c =~ /^[+]$/ 
+			str = "+"
+			nextCh()
+			return Token.new(Token::ADDOP,str)
+		
+		elsif @c =~ /^[-]$/ 
+			str = "-"
+			nextCh()
+			return Token.new(Token::SUBOP,str)
+		
+		elsif @c =~ /^[*]$/ 
+			str = "*"
+			nextCh()
+			return Token.new(Token::MULTIOP,str)
+		
+		elsif @c =~ /^[\/]$/ 
+			str = "/"
+			nextCh()
+			return Token.new(Token::DIVOP,str)
+		
+			
+
 		# more code needed here! complete the code here 
 		# so that your scanner can correctly recognize,
 		# print (to a text file), and display all tokens
@@ -105,6 +168,6 @@ end
 def whitespace?(lookAhead)
 	lookAhead =~ /^(\s)+$/
 end
-
+end
 
 
