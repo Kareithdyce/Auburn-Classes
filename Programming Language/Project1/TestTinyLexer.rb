@@ -9,11 +9,13 @@ load "./TinyScanner.rb"
 # simply include the file name, otherwise, you will need
 # to specify the entire path to the file as we did above
 # to load the other ruby modules
-scan = Scanner.new("input.txt")
+scan = Scanner.new("inpust.txt")
+if !scan.exists?
+    return nil
+end
 writer = File.open("output.txt", 'w:utf-8')
-			
+            
 tok = scan.nextToken()
-
 
 # somewhere in here, you need logic to write your tokens to a file
 # we'll use this file later in our parser
@@ -27,7 +29,7 @@ tok = scan.nextToken()
 # until there are no tokens left to scan 
 while (tok.get_type() != Token::EOF)
 
-   # display the first "Token" that you scanned in the Console
+# display the first "Token" that you scanned in the Console
 puts "Token: #{tok.get_type()} Lexeme: #{tok.get_text()}"
 str = "#{tok.get_type()} #{tok.get_text()}"
 if str =~ /\n/
@@ -45,3 +47,4 @@ end
 # Go ahead and display (I did this) and print it (you do this)
 puts "Token: #{tok.get_type()} Lexeme: #{tok.get_text()}"
 writer.write("#{tok.get_type()} #{tok.get_text()}")
+

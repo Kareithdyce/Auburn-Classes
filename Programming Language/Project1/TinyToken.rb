@@ -10,7 +10,7 @@ class Token
 
 # This is the only part of this class that you need to 
 # modify.
-	EOF = "eof"
+	EOF = "!eof!"
 	LPAREN = "("
 	RPAREN = ")"
 	ADDOP  = "+"

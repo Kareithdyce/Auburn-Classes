@@ -22,6 +22,7 @@
 #  Class Scanner - Reads a TINY program and emits tokens
 #
 class Scanner 
+	attr_accessor :exists
 # Constructor - Is passed a file to scan and outputs a token
 #               each time nextToken() is invoked.
 #   @c        - A one character lookahead 
@@ -29,11 +30,11 @@ class Scanner
 		# Need to modify this code so that the program
 		# doesn't abend if it can't open the file but rather
 		# displays an informative message
-		
 		if !File.exist?(filename)
 			puts "No file found"
+			@exists = false
 		else
-
+			@exists = true
 			@f = File.open(filename,'r:utf-8')
 			
 			# Go ahead and read in the first character in the source
@@ -46,6 +47,10 @@ class Scanner
 				@f.close()
 			end
 		end
+	end
+
+	def exists?
+		return @exists
 	end
 	# Method nextCh() returns the next character in the file
 	def nextCh()
@@ -61,9 +66,11 @@ class Scanner
 	# Method nextToken() reads characters in the file and returns
 	# the next token
 	def nextToken() 
+		#Handles EOF
 		if @c == "!eof!"
 			return Token.new(Token::EOF,"eof")
-				
+			
+		#Handles White Space
 		elsif (whitespace?(@c))
 			str =""
 		
@@ -73,6 +80,7 @@ class Scanner
 			end
 		
 			return Token.new(Token::WS,str)
+		#Handles Letters
 		 elsif letter?(@c)
 			str = ""
 			
@@ -80,12 +88,25 @@ class Scanner
 				str += @c
 				nextCh()
 			end
-			if str =~ /print/
+
+			if numeric?(@c)
+				str += @c
+				nextCh()
+			
+				while(numeric?(@c) || letter?(@c))
+					str += @c
+					nextCh()
+				end
+				
+				return Token.new("unknown",str)
+			end
+
+			if str == "print"
 				return Token.new(Token::PRINT, str)
 			end	
 			
 			return Token.new(Token::VAR,str)
-			
+		#Handles numbers	
 		elsif (numeric?(@c))
 			str = ""
 			
@@ -93,64 +114,68 @@ class Scanner
 				str += @c
 				nextCh()
 			end
+			
+			if letter?(@c)
+				str += @c
+				nextCh()
 
-			tok = Token.new(Token::INT,str)
+				while(letter?(@c) || numeric?(@c))
+					str += @c
+					nextCh()
+				end
+	
+				return Token.new("unknown",str)
+			end
 
+			return Token.new(Token::INT,str)
+		
+		#Handles left parenthesis
 		elsif @c =~ /^[(]$/ 
 			str = "("
 			nextCh()
 			return Token.new(Token::LPAREN,str)
 
+		#Handles right parenthesis
 		elsif @c =~ /^[)]$/ 
 			str = ")"
 			nextCh()
 			return Token.new(Token::RPAREN,str)
-		
+
+		#Handles equal
 		elsif @c =~ /^[=]$/ 
 			str = "="
 			nextCh()
 			return Token.new(Token::EQUAL,str)
-		
+
+		#Handles addition
 		elsif @c =~ /^[+]$/ 
 			str = "+"
 			nextCh()
 			return Token.new(Token::ADDOP,str)
 		
+		#Handles Subtraction	
 		elsif @c =~ /^[-]$/ 
 			str = "-"
 			nextCh()
 			return Token.new(Token::SUBOP,str)
-		
+
+		#Handles multiplication
 		elsif @c =~ /^[*]$/ 
 			str = "*"
 			nextCh()
 			return Token.new(Token::MULTIOP,str)
 		
+		#Handles division	
 		elsif @c =~ /^[\/]$/ 
 			str = "/"
 			nextCh()
 			return Token.new(Token::DIVOP,str)
-		
 			
-
-		# more code needed here! complete the code here 
-		# so that your scanner can correctly recognize,
-		# print (to a text file), and display all tokens
-		# in our grammar that we found in the source code file
-		
-		# FYI: You don't HAVE to just stick to if statements
-		# any type of selection statement "could" work. We just need
-		# to be able to programatically identify tokens that we 
-		# encounter in our source code file.
-		
-		# don't want to give back nil token!
-		# remember to include some case to handle
-		# unknown or unrecognized tokens.
-		# below is an example of how you "could"
-		# create an "unknown" token directly from 
-		# this scanner. You could also choose to define
-		# this "type" of token in your token class
-		tok = Token.new("unknown","unknown")
+		#Handles the rest
+		else
+			str = @c
+			nextCh()
+			return Token.new("unknown",str)
 		end
 	
 end
