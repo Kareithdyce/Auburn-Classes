@@ -9,7 +9,7 @@ load "./TinyScanner.rb"
 # simply include the file name, otherwise, you will need
 # to specify the entire path to the file as we did above
 # to load the other ruby modules
-scan = Scanner.new("inpust.txt")
+scan = Scanner.new("input.txt")
 if !scan.exists?
     return nil
 end
@@ -17,7 +17,7 @@ writer = File.open("output.txt", 'w:utf-8')
             
 tok = scan.nextToken()
 
-# somewhere in here, you need logic to write your tokens to a file
+# somewhere in here, you need logic to wtrite your tokens to a file
 # we'll use this file later in our parser
 # it is enough to just list one token/lexeme pair per line in our token file
 # Example: 

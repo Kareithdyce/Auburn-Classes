@@ -2,8 +2,3 @@ x = 3
 y = 5
 z = (x + y) / 3
 print z
-adfsaf21sdasdf
-[ashdfskj]
-1fdskjs1slkglk1
-z=2
-printsz

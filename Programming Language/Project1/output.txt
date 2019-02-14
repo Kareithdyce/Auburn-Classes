@@ -30,17 +30,4 @@ print print
 whitespace  
 id z
 whitespace 
-unknown adfsaf21sdasdf
-whitespace 
-unknown [
-id ashdfskj
-unknown ]
-whitespace 
-unknown 1fdskjs1slkglk1
-whitespace 
-id z
-= =
-num 2
-whitespace 
-id printsz
 !eof! eof
