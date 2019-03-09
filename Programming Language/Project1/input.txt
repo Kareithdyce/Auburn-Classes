@@ -2,3 +2,5 @@ x = 3
 y = 5
 z = (x + y) / 3
 print z
+stetyiu7oeu8iowfkejvbghtjq2y36u187697ebu wekboufwf
+qew;kh78o9 4177e[pfwejrhpufsaj'KFEQ[E9UTFNDQKL]]

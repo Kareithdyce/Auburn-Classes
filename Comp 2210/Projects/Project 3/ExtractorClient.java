@@ -13,7 +13,8 @@ public class ExtractorClient {
    /** Sample point data. */
    private static Point[] p = new Point[] {
       // l1
-      new Point(1, 0),
+      
+      /*new Point(1, 0),
       new Point(1, 1),
       new Point(1, 2),
       new Point(1, 3),
@@ -48,7 +49,29 @@ public class ExtractorClient {
       new Point(18, 10),
       //new Point(17, 11), appears in l5 above; don't want duplicate
       new Point(16, 12),
-      new Point(15, 13),
+      new Point(15, 13),*/
+
+         new Point(2, 2), 
+         new Point(2, 3),
+         new Point(2, 4),
+         new Point(2, 5),
+         
+         new Point(3, 2),
+         new Point(3, 3), 
+         new Point(3, 4),
+         new Point(3, 5),
+         
+         
+         new Point(4, 2),
+         new Point(4, 3), 
+         new Point(4, 4),
+         new Point(4, 5), 
+         
+         new Point(5, 2),
+         new Point(5, 3),
+         new Point(5, 4),
+         new Point(5, 5)
+
 
    };
 
@@ -58,11 +81,11 @@ public class ExtractorClient {
    public static void main(String[] args) {
       Extractor cl = new Extractor(Arrays.asList(p));
       SortedSet<Line> bruteLines = cl.getLinesBrute();
-      //System.out.println("Brute: ");
-      //printLines(bruteLines);
+      System.out.println("Brute: ");
+      printLines(bruteLines);
 
       SortedSet<Line> fastLines = cl.getLinesFast();
-      //System.out.println("Fast: ");
+      System.out.println("Fast: ");
       printLines(fastLines);
 
    }
