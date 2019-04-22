@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 14.12.25835.0	    04/01/18 16:56:45
+Microsoft (R) Macro Assembler Version 14.12.25835.0	    04/01/19 19:42:40
 Problem1.asm						     Page 1 - 1
 
 
@@ -25,68 +25,60 @@ Problem1.asm						     Page 1 - 1
 				ExitProcess proto,dwExitCode:dword
 
  00000000			.data
- 00000000 FFFE FFFC FFFA		Pos SWORD 	 -2, -4, -6, -8
-	   FFF8
- 00000008 0001 0003 0005		ng SWORD		  1,  3,  5,  7
-	   0007
- 00000010 FFF8 0005 FFFD		mix1 SWORD -8,5,-3, 2,5,-6,8
-	   0002 0005 FFFA
-	   0008
- 0000001E FFFF 0003 FFFC		mix2 SWORD -1,3,-4,12,-5,3,-4
-	   000C FFFB 0003
-	   FFFC
- 0000002C 00000002			addS DWORD TYPE mix2
- 00000030 70 6F 73 69 74		found BYTE "positive even number found ", 0
-	   69 76 65 20 65
-	   76 65 6E 20 6E
-	   75 6D 62 65 72
-	   20 66 6F 75 6E
-	   64 20 00
- 0000004C 6E 6F 20 70 6F		notfound BYTE "no positive even number found", 0
-	   73 69 74 69 76
-	   65 20 65 76 65
-	   6E 20 6E 75 6D
-	   62 65 72 20 66
-	   6F 75 6E 64 00
+ 00000000 0003 0005 0007		Pos WORD 	3,5,7,9,11
+	   0009 000B
+ 0000000A 0002 0004 0005		ng WORD   2,4,5,6,7,8
+	   0006 0007 0008
+ 00000016 0004 000C 0005		mix2 WORD 4,12,5,3,4
+	   0003 0004
+ 00000020 00000002			addS DWORD TYPE mix2
+ 00000024 20 4F 64 64 20		found BYTE " Odd integer found", 0
+	   69 6E 74 65 67
+	   65 72 20 66 6F
+	   75 6E 64 00
+ 00000037 4E 6F 20 6F 64		notfound BYTE "No odd integer found", 0
+	   64 20 69 6E 74
+	   65 67 65 72 20
+	   66 6F 75 6E 64
+	   00
 
 					
  00000000			.code
  00000000			main proc
- 00000000  B9 00000007		mov ecx, lengthof mix2
+ 00000000  B9 00000005		mov ecx, lengthof mix2
  00000005  BB 00000000		mov ebx, 0
  0000000A  B8 00000000		mov eax, 0
  0000000F			L1:
  0000000F  0F BF 83			movsx eax, mix2[ebx]
-	   0000001E R
- 00000016  83 F8 00			cmp eax, 0
- 00000019  7E 2B			jle negative
- 0000001B  66| BA 0000				mov dx, 0
- 0000001F  51					push ecx
- 00000020  66| B9 0002				mov cx, 2
- 00000024  66| F7 F1				div cx
- 00000027  59					pop ecx
- 00000028  66| 83 FA 00				cmp dx, 0
- 0000002C  75 18				jne negative
- 0000002E  66| B9 0002				mov cx, 2
- 00000032  66| F7 E1				mul cx
- 00000035  BA 00000030 R			mov edx, offset found
- 0000003A  E8 00000000 E			Call Writestring
- 0000003F  E8 00000000 E			Call WriteInt
- 00000044  EB 12				jmp next
- 00000046				negative:
- 00000046  03 1D 0000002C R			add ebx, addS
- 0000004C  E2 C1			loop L1
+	   00000016 R
+ 00000016  66| BA 0000			mov dx, 0
+ 0000001A  51				push ecx
+ 0000001B  66| B9 0002			mov cx, 2
+ 0000001F  66| F7 F1			div cx
+ 00000022  59				pop ecx
+ 00000023  66| 83 FA 00			cmp dx, 0
+ 00000027  74 1A			je negative
+ 00000029  66| B9 0002			mov cx, 2
+ 0000002D  66| F7 E1			mul cx
+ 00000030  66| 40			inc ax
+ 00000032  BA 00000024 R		mov edx, offset found
+ 00000037  E8 00000000 E		Call Writestring
+ 0000003C  E8 00000000 E		Call WriteInt
+ 00000041  EB 12			jmp next
+ 00000043				negative:
+ 00000043  03 1D 00000020 R			add ebx, addS
+ 00000049  E2 C4			loop L1
 
- 0000004E  BA 0000004C R		mov edx, offset notfound
- 00000053  E8 00000000 E		Call Writestring
- 00000058			next:
+ 0000004B  BA 00000037 R		mov edx, offset notfound
+ 00000050  E8 00000000 E		Call Writestring
+ 00000055			next:
 
 					invoke ExitProcess,0
- 00000058  6A 00	   *	    push   +000000000h
- 0000005A  E8 00000000 E   *	    call   ExitProcess
- 0000005F			main endp
+ 00000055  6A 00	   *	    push   +000000000h
+ 00000057  E8 00000000 E   *	    call   ExitProcess
+ 0000005C			main endp
 				end main
-Microsoft (R) Macro Assembler Version 14.12.25835.0	    04/01/18 16:56:45
+Microsoft (R) Macro Assembler Version 14.12.25835.0	    04/01/19 19:42:40
 Problem1.asm						     Symbols 2 - 1
 
 
@@ -180,8 +172,8 @@ Segments and Groups:
 
 FLAT . . . . . . . . . . . . . .	GROUP
 STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
-_DATA  . . . . . . . . . . . . .	32 Bit	 0000006A Para	  Public  'DATA'	
-_TEXT  . . . . . . . . . . . . .	32 Bit	 0000005F Para	  Public  'CODE'	
+_DATA  . . . . . . . . . . . . .	32 Bit	 0000004C Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000005C Para	  Public  'CODE'	
 
 
 Procedures, parameters, and locals:
@@ -288,10 +280,10 @@ WriteStackFrame  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External
 WriteString  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
 WriteToFile  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
 WriteWindowsMsg  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
-main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000005F Public STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000005C Public STDCALL
   L1 . . . . . . . . . . . . . .	L Near	 0000000F _TEXT	
-  negative . . . . . . . . . . .	L Near	 00000046 _TEXT	
-  next . . . . . . . . . . . . .	L Near	 00000058 _TEXT	
+  negative . . . . . . . . . . .	L Near	 00000043 _TEXT	
+  next . . . . . . . . . . . . .	L Near	 00000055 _TEXT	
 printf . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 scanf  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
 wsprintfA  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
@@ -511,13 +503,13 @@ VK_UP  . . . . . . . . . . . . .	Number	 00000026h
 WINDOW_BUFFER_SIZE_EVENT . . . .	Number	 00000004h   
 WriteConsoleOutputCharacter  . .	Text   	 WriteConsoleOutputCharacterA
 WriteConsole . . . . . . . . . .	Text   	 WriteConsoleA
-addS . . . . . . . . . . . . . .	DWord	 0000002C _DATA	
+addS . . . . . . . . . . . . . .	DWord	 00000020 _DATA	
 black  . . . . . . . . . . . . .	Number	 00000000h   
 blue . . . . . . . . . . . . . .	Number	 00000001h   
 brown  . . . . . . . . . . . . .	Number	 00000006h   
 cyan . . . . . . . . . . . . . .	Number	 00000003h   
 exit . . . . . . . . . . . . . .	Text   	 INVOKE ExitProcess,0
-found  . . . . . . . . . . . . .	Byte	 00000030 _DATA	
+found  . . . . . . . . . . . . .	Byte	 00000024 _DATA	
 gray . . . . . . . . . . . . . .	Number	 00000008h   
 green  . . . . . . . . . . . . .	Number	 00000002h   
 lightBlue  . . . . . . . . . . .	Number	 00000009h   
@@ -527,10 +519,9 @@ lightGreen . . . . . . . . . . .	Number	 0000000Ah
 lightMagenta . . . . . . . . . .	Number	 0000000Dh   
 lightRed . . . . . . . . . . . .	Number	 0000000Ch   
 magenta  . . . . . . . . . . . .	Number	 00000005h   
-mix1 . . . . . . . . . . . . . .	Word	 00000010 _DATA	
-mix2 . . . . . . . . . . . . . .	Word	 0000001E _DATA	
-ng . . . . . . . . . . . . . . .	Word	 00000008 _DATA	
-notfound . . . . . . . . . . . .	Byte	 0000004C _DATA	
+mix2 . . . . . . . . . . . . . .	Word	 00000016 _DATA	
+ng . . . . . . . . . . . . . . .	Word	 0000000A _DATA	
+notfound . . . . . . . . . . . .	Byte	 00000037 _DATA	
 red  . . . . . . . . . . . . . .	Number	 00000004h   
 white  . . . . . . . . . . . . .	Number	 0000000Fh   
 wsprintf . . . . . . . . . . . .	Text   	 wsprintfA

@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1fcy.pdb                                   
+Name of Chain_2: ../pdb/1ktg.pdb                                   
+Length of Chain_1:  236 residues
+Length of Chain_2:  137 residues
+
+Aligned length=   78, RMSD=   4.91, Seq_ID=n_identical/n_aligned= 0.038
+TM-score= 0.22612 (if normalized by length of Chain_1)
+TM-score= 0.33953 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+ASPQLEELITKVSKAHQETFPSLCQLGKYTTNSSADHRVQLDLGL-------WDKFSEL----ATKCIIKIVEFAKRLPGFTGLSIADQITLLKAACL-----DILMLRICTRYTPE-Q-D--TM--TF---SDGLTLNRT--QMHNAGFGPLTDLVFAF-A---GQLLPLEM----------------DDTETGLLSAICLICGD-----------RMDLEEPEKVDKLQEPLLEALRLYARRRRPSQPYMFPRMLMK-ITDLRGISTKGAERAITLKMEIPGPMPPLIREMLE
+                                                    .  :::.    .:.:: ..  .                             .:  :::: ::::: : :  ::  ::   ::::..     ...: . :::  :: .. .   .:..                    .:  ..                      .                                          .. ::::::::::::::::::              
+---------------------------------------------VVKAAGLV--IYRKLAGKIEFLL-LQ--A------------------------SYPPHHW--TPPK-GHVDPGEDEWQAAIRETKEEANITKE---QLTIHE-D-CHE--TL-FYEAKGKPKSV----KYWLAKLNNPDDVQLSHE--HQ-----------NWKWCELEDAIK-----------------------------------------IAD-YAEMGSLLRKFSAFLAGF--------------
+

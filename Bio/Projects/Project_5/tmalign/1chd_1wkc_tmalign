@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1chd.pdb                                   
+Name of Chain_2: ../pdb/1wkc.pdb                                   
+Length of Chain_1:  198 residues
+Length of Chain_2:  166 residues
+
+Aligned length=  120, RMSD=   4.92, Seq_ID=n_identical/n_aligned= 0.067
+TM-score= 0.37734 (if normalized by length of Chain_1)
+TM-score= 0.42600 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+LLSSEKLIAIGA------------S----T--GGTEAIRHVLQPLPL-SSPAVIITQHMPPGF---TRSFAERLNKLCQISVKEAEDGERVLPGHAYIAPGD-KH----MELARSGANYQIKIHDGPPVNRHRPSVDVLFH----SVAKHAGRNAVGVILTGM-------GNDGAAGMLAMYQAGAWTIAQNEASCVVFGM-PREAIN-MGGVSEVVDL--SQVSQQMLAKISAGQAIRI----
+                        .    .  ::::::::::::::. .:::::::::..      .. .:  ::  : ::             :.:..    ..    ..::      ::.::..                   .  .:::.:::::::.:.       .::..::::::::::::.:.:.. .::::.  ... .. ::::.:.:.:  :::  .                 
+------------TKAELRRRARAAWRRLDLKALSRAVGAALLPWLRERGFRHILLYHPLP---HELNL-LP--LE--A-YP-------------ARYYL---PKVAGKGLTVH------PFGPLAE---------------PTTPP--EDPRVLDLVVVPGLAFDREGYRLGHGQGFYDRFLKEVRAATVGVV-PQALLF-PALP-RDPWDVPVDHLATEAGVE--A-------------VKRP
+

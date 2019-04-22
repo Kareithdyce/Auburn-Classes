@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1i58.pdb                                   
+Name of Chain_2: ../pdb/2tps.pdb                                   
+Length of Chain_1:  189 residues
+Length of Chain_2:  226 residues
+
+Aligned length=   97, RMSD=   5.99, Seq_ID=n_identical/n_aligned= 0.062
+TM-score= 0.27530 (if normalized by length of Chain_1)
+TM-score= 0.24387 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+GSHMVPISFVFNRFPRMVRDLAKKMNKEVNFIMRGEDTE------------------LDRTFVEEIG--EPLLHL------------------------------LRNA------------IDHGIEPKEE------RIAKGKPPIGTLILSARHEGNNVVIEVEDDGRGIDKEKI-IR-------------KAIE-KG-LIDESKAATL---SDQEILNF-------------------LFVPGFST---KEKVSEVSGR--GVGMDVVKNVVESLNGSISIESEKDKGTKVTIRLPLT------------------
+              :: .....:::..                              :...::::::  ::.:::                              :...            .....           .....::.::..                  :.::::::  .              ..   .  .            ..:::...                   ::::.      ..:::..     .:::: :::::::...                                       
+--------------HG-IRMTRISREM------------MKELLSVYFIMGSNNTKADPVTVVQKALKGGATLYQFREKGGDALTGEARIKFAEKAQAACREAGVPFIVNDDVELALNLKADGIHI-----GQEDANAKEVRAAIGDMI------------------LGVSAHTM-SE-VKQAEEDGADYVGLG--PI-YP---------TETKKDTRAVQGVSLIEAVRRQGISIPIVGIGGIT---IDNAAPVIQA---GADGVSM-ISAISQAEDP---------------------ESAARKFREEIQTYKTGR
+

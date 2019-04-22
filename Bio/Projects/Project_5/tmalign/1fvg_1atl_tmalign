@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1fvg.pdb                                   
+Name of Chain_2: ../pdb/1atl.pdb                                   
+Length of Chain_1:  189 residues
+Length of Chain_2:  200 residues
+
+Aligned length=  103, RMSD=   5.59, Seq_ID=n_identical/n_aligned= 0.049
+TM-score= 0.29386 (if normalized by length of Chain_1)
+TM-score= 0.28351 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+-----KIVSPQE-------------------------------------------ALP-GRKEPLVVAAKHHVNGNRTVEPFPEGTQAVFGGCFWGAERKFWTLKGVYSTQVGFAGGYTPN-PTYKEVCSGKTGHAEVVRV-VFQPEHISFEELLKVFWENHDPTQGRQGNDHGSQYRSAIYPT-S--A-EHVGAAL----------------------KSK----------EDYQKVLSEHGFGLI----TT--DIREGQTFYYAEDYHQQYLSKDPDGYC----
+     .:.                                               ..  ....:....  .      :.  .               . .::      ...::.        .....:::.:.:.:::... ::.. ::::  :  .:  :::. : ::  :   ..::....: :  : :::::::                      :::          ::..::.:...::.     .   .                              
+LPQRYIEL----VVVADHRVFMKYNSDLNTIRTRVHEIVNFINGFYRSLNIHVSLTD-LEIWSNEDQI--N------IQ--S---------------A-SSD------TLNAFA-------EWRETDLLNRKSHDNAQLLTAIELD-EETL--G--LA--PLGT-M-CD--P---KLSIGIVQDHSPINLLMGVTMAHELGHNLGMEHDGKDCLRGASLCIMRPGLTKGRSYEFSDDSMHYYERFL-KQYKP-QCI--------------------------LNKP
+

@@ -2,10 +2,10 @@ import sys
 import os.path
 import math
 
-if len(sys.argv) < 3:
-    print('Error 2 input files required')
+if len(sys.argv) < 2:
+    print('Error a .pssm input file is required')
     quit()
-if not sys.argv[1].endswith('.fasta') or not sys.argv[2].endswith('.pssm'):
+if not sys.argv[1].endswith('.pssm'):
     print('Error incorrect input')
     quit()
 if not os.path.isfile('training.txt'):
@@ -41,8 +41,7 @@ def calcP(aList, mu, var):
     return temp
 
 output = ""
-with open("training.txt") as data, open(sys.argv[1]) as fasta, open(sys.argv[2]) as pssm:
-    next(fasta)
+with open("training.txt") as data, open(sys.argv[1]) as pssm:
     next(data)
     next(pssm)
     next(pssm)
@@ -65,13 +64,15 @@ with open("training.txt") as data, open(sys.argv[1]) as fasta, open(sys.argv[2])
     pC = float(next(data).rstrip('\n'))
     line = []
     
-    fLine = next(fasta).rstrip('\n')
-    for i in range(len(fLine)):
-        pLine = next(pssm).split()
+    pLineSize = 0
+    pLine = next(pssm).split()
+    while len(pLine) > 0:
         line.append(list(map(int, pLine[2:22])))
-    
-    for i in range(len(fLine)):
-        testing = getAttributes(i, len(fLine), line)
+        pLine = next(pssm).split()
+        pLineSize += 1
+
+    for i in range(pLineSize):
+        testing = getAttributes(i, pLineSize, line)
         perH = pH * calcP(testing, muH, varH)
         perE = pE * calcP(testing, muE, varE)
         perC = pC * calcP(testing, muC, varC)
@@ -85,11 +86,11 @@ with open("training.txt") as data, open(sys.argv[1]) as fasta, open(sys.argv[2])
             output += 'C'    
 
     print("Predicted Output: " + output)
-    if(len(sys.argv) >= 4):
-        with open(sys.argv[3]) as ss:
+    if(len(sys.argv) >= 3):
+        with open(sys.argv[2]) as ss:
             next(ss)
             sLine = next(ss).rstrip('\n')
-            print("Actual Sequence: " + sLine)
+            print("Actual Sequence:  " + sLine)
             if len(sLine) != len(output):
                 print("Error")
                 quit()

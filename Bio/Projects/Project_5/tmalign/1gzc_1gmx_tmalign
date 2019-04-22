@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1gzc.pdb                                   
+Name of Chain_2: ../pdb/1gmx.pdb                                   
+Length of Chain_1:  239 residues
+Length of Chain_2:  107 residues
+
+Aligned length=   71, RMSD=   4.86, Seq_ID=n_identical/n_aligned= 0.085
+TM-score= 0.19605 (if normalized by length of Chain_1)
+TM-score= 0.33643 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+VETISFSFSEFEPGNDNLTLQGAALITQSGVLQLTKINQNGMPAWDSTGRTLYTKPVHMWDSTTGTVASFETRFSFSIEQPYTRPLPADGLVFFMGPTKSKPAQGYGYLGVFNNSKQDNSYQTLAVEFDTFSNPWDPPQVPHIGIDVN----SIRSIKTQPFQLDNGQVANVVIKYDAPSKILHVVLVYPSSGAIYTIAE-IVDVKQVLPDWVDVGLSGATGAQRDAAETHDVYS-WS--F--QASLPE--------------------------
+  .::.          :: :   :         :             ..:.                                                .:::.      .         ..:.::::.         .:::.         .:..  .              .        .:              :: ::.:: :::::::::::            .:::. ::  :  ::::                            
+--MDQF----------EC-I---N---------V-------------ADAH------------------------------------------------QKLQE------K---------EAVLVDIRD---------PQSFA-----MGHAVQAF--H--------------L--------TN--------------DTLGAFMR-DNDFDTPVMVM------------YHGNSSKGAAQYLLQQG--YDVVYSIDGGFEAWQRQFPAEVAYGA
+

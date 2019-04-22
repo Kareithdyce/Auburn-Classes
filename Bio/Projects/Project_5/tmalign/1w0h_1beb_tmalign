@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1w0h.pdb                                   
+Name of Chain_2: ../pdb/1beb.pdb                                   
+Length of Chain_1:  194 residues
+Length of Chain_2:  156 residues
+
+Aligned length=   92, RMSD=   6.38, Seq_ID=n_identical/n_aligned= 0.033
+TM-score= 0.23806 (if normalized by length of Chain_1)
+TM-score= 0.27168 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+ADSYYDYICIIDFEA-------TCEEGNPPEFVHEIIEF-P--VVL-LNTH-TLE-IEDTFQ-Q-YVRPEINTQLSDFC----ISLT---------GITQD-QVDRADT----FPQV--------LK------------KVIDWKLKELGTKYKYSLLT---D-GSWD-SKF-LNIQCQLSRLKY-PPFAKK----WINIRKSYGNFYKVPRSQTKLTILEKLGDYDGRPHCGLDDSKNIARIAVRLQDGCELRINEK
+                      .        .:::...  .  ... .:.  .:: ::::.. . ...::...          .            ..    .. .:::    .:::        ::            .:::..:.:..  . .....   . ::.  :.  ..           .::...    .::::             :::..      .   :     :                      
+---------------QTMKGLDI--------QKVAGTW-YSLAMAASDIS-LLDAQSAPLRVYVEELKPTPEG------DLEIL---LQKWENGECAQ---KKI-IAEKTKIPAVFKIDALNENKVLVLDTDYKKYLLFCMENSAEPEQS--L-VCQCLVRTPEVDD-EAL-EKF----------DKALKALPMHIRLSFN-------------PTQLE------E---Q-----C----------------------
+

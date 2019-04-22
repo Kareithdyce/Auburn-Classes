@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/5ptp.pdb                                   
+Name of Chain_2: ../pdb/1gmi.pdb                                   
+Length of Chain_1:  222 residues
+Length of Chain_2:  135 residues
+
+Aligned length=   77, RMSD=   5.11, Seq_ID=n_identical/n_aligned= 0.065
+TM-score= 0.22400 (if normalized by length of Chain_1)
+TM-score= 0.32040 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+-------IVGGYTCGANTVPYQVSLNSGYHFCGGSLINSQWVVSAAHCYKSGIQVRLGEDNINVVEGNEQFISASKSIVHPSYNSNTLNNDIMLIKLKSAASLNSRVASIS--------LPT--S--------CASAGTQCLISGWGNTKSSGTSYPDVLKCLKA-P--ILSDSSCKSAYPGQITSNMFCAGYLEGGKDS-----CQGDGGPVVCS-----GKLQGIVSW---GS----GCAQKNKPGVYTKVCNYVSWIKQTIASN-------------
+       .:..                                                                                                            .::  :        ..: .::::::::.          .::::::. .  ..:                 ..::  .::.      ..::..:::::     ::::::::.   ..    ....  :..:::::..                         
+MVVFNGLLKIK----------------------------------------------------------------------------------------------------ICEAVSLKPTAWSLRDVGPRPQTFL-LDPYIALNVD----------DSRIGQTATKQKTNS-----------------PAWH--DEFV-TDVCNGRKIELAVFHDAPIGYDDFVANCTIQFEELLQNGSRHF--EDWIDLEPEG------------KVYVIIDLSGSSG
+

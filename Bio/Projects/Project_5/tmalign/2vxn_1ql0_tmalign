@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/2vxn.pdb                                   
+Name of Chain_2: ../pdb/1ql0.pdb                                   
+Length of Chain_1:  249 residues
+Length of Chain_2:  241 residues
+
+Aligned length=  145, RMSD=   6.67, Seq_ID=n_identical/n_aligned= 0.083
+TM-score= 0.31520 (if normalized by length of Chain_1)
+TM-score= 0.32230 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+AKPQPIAA-------ANWKCNGTTASIEKLVQVFNEHTISHDVQCVVA-PTFV-----HIPLVQAKLRNPKY--VISAQNA-------------IAKSGAFTGEVSMPILKDIGVHW----------------VILGH-SERRTYYGETDEIVAQKVSEACKQGFM---V---IA-CI--GETLQQREANQTAKVVLSQTSAIAAKLTKD----------------------AWNQVVLAYEPVWAIGTGKVATPEQAQEVHLLLRKW---VSENIGTDVAAKLR-IL------YGGSVNAA-NAATLYAKPDINGFLVGGASLKPEFRDIIDATR---------
+               .:.               .          :::. ::..     ... ...         ..:.:.              ..::. . :.....::..                     ..::. ....::::..  .. ....::::.      .   .. ..  :....:::....  ..                                    ..::::::::: ::     :::..::  ::. ..     ...::....:.... ..      .....::: ::::::::::.                               
+--------SIDNCAVGCP---------------T----------GGSSKVSIVRHAYTLNN-NST-------TKFANWVA-YHITKDTPASGKTRNWKT-D-PALNPADTLA-----PADYTGANAALKVDRGHQAPLASLAGVSDWES--LN-YLSNITPQK---SDLNQGAWARLEDQERKLIDRADISS--VY--------------TVTGPLYERDMGKLPGTQKAHTIPSAYWKVIFI-NN-----SPAVNHY--AAF-LF--DQNTPKGADFCQFRVTVDEIEKRTGLIIWAGLPDDVQASLKSKPGV----------------------LPELMGCKN
+

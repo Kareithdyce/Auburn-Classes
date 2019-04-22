@@ -52,8 +52,7 @@ def calcVar(aList, attr, mu):
 def calcP(aList, mu, var):
     temp = 1
     for i in range(len(aList)):
-        hold = (math.exp(-((aList[i] - mu[i]) ** 2 ) / (2 * var[i])) / math.sqrt(2 * math.pi * var[i])) 
-        temp *= hold
+        temp *= math.exp(-((aList[i] - mu[i]) ** 2 ) / (2 * var[i])) / math.sqrt(2 * math.pi * var[i])
     return temp
 
 # Gets their fasta and ss file paths
@@ -117,7 +116,6 @@ C = 0
 Helix = []
 Strand = []
 Coil = []
-#numberOfTrainingData = 1
 while count < numberOfTrainingData:
     with open(fastaPath + "/" + trainingFastaFiles[count]) as fastaFile, open(ssPath + "/" + trainingSsFiles[count]) as ssFile, open(pssmPath + "/" + trainingPssmFiles[count]) as pssmFile:
         next(fastaFile)
@@ -194,7 +192,12 @@ f.write('\n' + str(pC))
 
 count = 0
 total = 0
-correct = 0
+hCorrect = 0
+eCorrect = 0
+cCorrect = 0
+totalH = 0 
+totalE = 0 
+totalC = 0 
 while count < numberOfTestingData:
     with open(fastaPath + "/" + testingFastaFiles[count]) as fastaFile, open(ssPath + "/" + testingSsFiles[count]) as ssFile, open(pssmPath + "/" + testingPssmFiles[count]) as pssmFile:
         next(fastaFile)
@@ -211,7 +214,7 @@ while count < numberOfTestingData:
         for i in range(len(fastaLine)):
             pssmLine = next(pssmFile).split()
             line.append(list(map(int, pssmLine[2:22])))
-        totalH = 0 
+        
         for i in range(len(fastaLine)):
             testing = getAttributes(i, len(fastaLine), line)
             total += 1 
@@ -220,19 +223,31 @@ while count < numberOfTestingData:
             perC = pC * calcP(testing, muC, varC)
             
             maxPer = max(perH,perE,perC) 
+            if 'H' == ssLine[i]:
+                totalH += 1
+            if 'E' == ssLine[i]:
+                totalE += 1
+            if 'C' == ssLine[i]:
+                totalC += 1
+
+
             if perH == maxPer:
                 if 'H' == ssLine[i]:
-                    correct += 1
+                    hCorrect += 1
 
             elif perE == maxPer:
                 if 'E' == ssLine[i]:
-                    correct += 1
+                    eCorrect += 1
             else:
                 if 'C' == ssLine[i]:
-                    correct += 1
+                    cCorrect += 1
 
     count += 1
-
+correct = hCorrect + eCorrect + cCorrect
 print(correct/total)
+print("Predicted H's " + str(hCorrect/totalH))
+print("Predicted E's " + str(eCorrect/totalE))
+print("Predicted C's " + str(cCorrect/totalC))
+print("Training data stored in training.txt")
 
 #if __name__ == "__main__": main()

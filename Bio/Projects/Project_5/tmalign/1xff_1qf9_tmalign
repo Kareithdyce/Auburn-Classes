@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1xff.pdb                                   
+Name of Chain_2: ../pdb/1qf9.pdb                                   
+Length of Chain_1:  238 residues
+Length of Chain_2:  194 residues
+
+Aligned length=  112, RMSD=   5.89, Seq_ID=n_identical/n_aligned= 0.071
+TM-score= 0.28123 (if normalized by length of Chain_1)
+TM-score= 0.32493 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+-------CGIVGAIAQRDVAEILLEGLRRLE-YRGYDSAGLAVVDAEGHMTRLRRLGKVQMLAQAAEE--------HP--LH-GGTGIAHT---------RWAT---HGEPSEV--NA-HP-HVSEHIVVVHNGIIENHEPLREELKARG-YTFVS-ETDTEVIAHLVNWELKQGGTLREAVLRAIPQLRGAYGTVIM----------------------------------DS-RHPDT-LL-AARSGSPLVIGLGMGENFIASDQLALLPVTR-RFI-FLEEGDIAEITRRSVNIFDKTGAEVKRQDIESNL------
+       ...::::   ::. :::::::::: :::: :::::         :::       . .:...        ..  .. :..              .      ...:.    .. :. ....:::.               .     ..::: .:::  .                            :::..                                   .. .:::: :: ::.....::::::            .::... ... ..                                      
+MEKSKPNVVFVLGG---PGS-GKGTQCANIVRDFGW-VHLSA---------GDL-------L-RQEQQSGSKDGEMIATMIKNGEI-----VPSIVTVKLL---KNAIDANQ--GKNFLVDGFPRNEENN---------------N----SWEENMKDFVD--T----------------------------KFVLF-FDCPEEVMTQRLLKRGESSGRSDDNIESIKKRFNTFNVQTKLVIDHYNKFDKVKIIPAN------------RDVNEVYNDVENL--------------------------------FKSMGF
+

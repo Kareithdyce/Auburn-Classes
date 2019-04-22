@@ -1,0 +1,26 @@
+
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: ../pdb/1hh8.pdb                                   
+Name of Chain_2: ../pdb/1lm4.pdb                                   
+Length of Chain_1:  192 residues
+Length of Chain_2:  189 residues
+
+Aligned length=  103, RMSD=   6.02, Seq_ID=n_identical/n_aligned= 0.029
+TM-score= 0.28860 (if normalized by length of Chain_1)
+TM-score= 0.29155 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+(":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
+SLVEAISLWNEGVLAADKKDWKGALDAFSAVQDP----------HSR-ICFNIGCMYTILKNMTEA------------EKA---F--TRS---I--------NRDKHLAVAYFQRGMLYYQTEKYDLAIKDLKEALIQLR--GN-----------------QLI--DYK----ILGLQ-FKLFACEVLYNIAFMYAKKEEWKKAEEQLALATSMKSEP-RHSK--IDKAMECVWKQKLYE-PVVI-PVGRLFRPN---ERQVAQL-------------
+                                            ..  .::::: ::::....               .     .  .     .        .::::::  ::::.....::. :  :  :: : ::...  ..                 ..:  ::.    .::.: :......  .. ::::..: ::  ::  :: :  ::.   ..    .               .::: .:.:...     .                   
+----------------------------------GSDKIHHMLTMK-DIIRDGH-PTLRQKAA---ELELPLTKEEKET--LIAMREF--LVNSQDEEIAKRYGLRSGV--GLAAPQINISKR-M--I--AV-L-IPDDGSGKSYDYMLVNPKIVSHSVQEAYLPTGEGLSVDDNVAGLVHRHNRI--TI-KAKDIEG-ND--IQ--LR-L--KGY--PAI--VFQ--------------HEIDHLNGVMFYD--HIDK------NHPLQPHTDAVEV
+
