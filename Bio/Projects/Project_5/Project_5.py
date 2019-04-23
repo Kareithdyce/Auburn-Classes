@@ -530,9 +530,6 @@ for i in range(len(TMAlignAverages[1])):
     result += math.pow(TMAlignAverages[1][i] - wixiSum, 2)
 
 meanAccuracy = result / len(TMAlignAverages[1])
-
 print ("stop")
-
-
-
 print("lol")
+print(meanAccuracy)
