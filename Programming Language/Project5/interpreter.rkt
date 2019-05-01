@@ -15,6 +15,14 @@
 (define empty-env
   (lambda ()
     (list 'empty-env)))
+;;defines the while loop
+(define while
+  (lambda (check ins myEnv)
+        (cond
+          ((exp myEnv check)
+          (interp (car ins) myEnv)
+                (set! myEnv(interp(cadr ins) myEnv))
+                (while check ins myEnv)))))
 
 ;; entend-env : environment, variable, value -> environment
 (define extend-env
@@ -58,6 +66,7 @@
                                     (display (exp myEnv (cadr stmt)))
                                     myEnv))
         ((eqv? (car stmt) '=) (extend-env myEnv (cadr stmt)(exp myEnv (caddr stmt))))
+        ((eqv? (car stmt) 'while) (while(cadr stmt)(caddr stmt) myEnv))
         ( else (display "\nI saw something I didn't  understand.")))))
                     
 ;; exp : expression -> value    
@@ -65,8 +74,18 @@
   (lambda (myEnv e)
     (cond
       ((integer? e) e)
+      ((boolean? e) e)
       ((symbol? e) (apply-env myEnv e ))
       ((eqv? (car e) '+) (+ (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; what if the operands were reversed?
+      ((eqv? (car e) '-) (- (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      ((eqv? (car e) '*) (* (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      ((eqv? (car e) '/) (/ (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      ((eqv? (car e) '<) (< (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      ((eqv? (car e) '>) (> (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      ((eqv? (car e) 'and) (and (exp myEnv (cadr e))(exp myEnv (caddr e)))) ; 
+      
+      ;((eqv? (car e) 'and) (and (cadr e)) (caddr e)) 
+            
       (else (display "I saw something I didn't understand")))))
 
 
