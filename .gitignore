@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-R3FRC2018/
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -136,4 +132,3 @@ dmypy.json
 .project
 .pydevproject
 .pyc
->>>>>>> branch 'master' of https://github.com/SoftwareProcess/assignment-2-Kareithdyce.git
