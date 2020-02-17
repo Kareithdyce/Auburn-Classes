@@ -1,0 +1,884 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Eadd4
+Z0 w1556296649
+Z1 DPx4 work 13 bv_arithmetic 0 22 ;=2SeGQPb=ziI`4efIfkn0
+Z2 DPx4 work 9 dlx_types 0 22 _ZZUMX>6c^leCfi6@VEXm1
+Z3 d//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4
+Z4 8//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd
+Z5 F//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd
+l0
+L258
+VbNiF?AQHiHhRG3zHb@DlW2
+!s100 Bj_cQeOQo_[]X1KAen[ZE0
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1556296655
+!i10b 1
+Z8 !s108 1556296655.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd|
+Z10 !s107 //Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Abehaviour
+R1
+R2
+Z13 DEx4 work 4 add4 0 22 bNiF?AQHiHhRG3zHb@DlW2
+l264
+L263
+Vk^GH>ZY2oOg@8]lXLK0kY1
+!s100 VRA9Y4ZUfOKYj<afZ0]4B2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 4 add4 0 22 H:X79nP`2PkY`:XW^I9on2
+l242
+L241
+V=<17SQjaoN22o13V1WWHI2
+!s100 EA;GgzOFgcfOLc[@h34m?2
+R6
+32
+Z14 !s110 1555886040
+!i10b 1
+Z15 !s108 1555886040.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_datapath_v4.vhd|
+Z17 !s107 \\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_datapath_v4.vhd|
+!i113 1
+R11
+R12
+Z18 w1555886037
+Z19 F\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_datapath_v4.vhd
+Z20 8\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_datapath_v4.vhd
+Ealu
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L23
+V8R0baI6Pe3JGDzghCB]ME3
+!s100 BP_Om1WKbzN0JL1_@CH_i1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+Z21 DEx4 work 3 alu 0 22 8R0baI6Pe3JGDzghCB]ME3
+R1
+R2
+Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z24 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z25 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+l38
+L37
+VJ>oUF4gS_]ieLS@UNVdh53
+!s100 QJma]BdJhFoG=TiNXT82B1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+R21
+l30
+L29
+VOPA@^obY;>GXOJBg1a7F02
+!s100 QVg7m^IZmL8b[YGH:@8OB1
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Pbv_arithmetic
+w1524853932
+R3
+8//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd
+F//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd
+l0
+L15
+V;=2SeGQPb=ziI`4efIfkn0
+!s100 DK;Y`J0lJAh`j:XUgQ7B<1
+R6
+32
+b1
+!s110 1556295548
+!i10b 1
+!s108 1556295547.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd|
+!s107 //Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd|
+!i113 1
+R11
+R12
+Bbody
+R1
+w1524853935
+8//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd
+F//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd
+l0
+L1
+VLPF@=`8X>]9I@:nc^2mYE3
+!s100 ;^d^hPQojBY3:39_Lf`ZP1
+R6
+32
+!s110 1556295550
+!i10b 1
+!s108 1556295550.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd|
+!s107 //Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd|
+!i113 1
+R11
+R12
+nbody
+Edlx_register
+Z26 w1555718653
+R1
+R2
+R22
+R23
+R24
+R25
+R3
+Z27 8\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab3_mips.vhd
+Z28 F\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab3_mips.vhd
+l0
+L12
+V:5N[3M[ZAPhCBn?a9l_9c2
+!s100 RzC2=k<oCW[E0N`elV4c_1
+R6
+32
+Z29 !s110 1555779117
+!i10b 1
+Z30 !s108 1555779117.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab3_mips.vhd|
+Z32 !s107 \\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab3_mips.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+R22
+R23
+R24
+R25
+DEx4 work 12 dlx_register 0 22 :5N[3M[ZAPhCBn?a9l_9c2
+l21
+L20
+V_^lnc=8;`<Ib@:92kD>;k1
+!s100 `d7a3jI1UU<z^MoSKPLfC2
+R6
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R11
+R12
+Pdlx_types
+R0
+R3
+R4
+R5
+l0
+L3
+V_ZZUMX>6c^leCfi6@VEXm1
+!s100 Q@j@;9cQb0G<aNlj6<`Ie0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edm
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L347
+V;=T?LjS>d:lWYADK4[k6o1
+!s100 AfiPbczHEbcYW;ZR3Q>d_3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+Z33 DEx4 work 2 dm 0 22 ;=T?LjS>d:lWYADK4[k6o1
+l360
+L356
+Vkn_Z0>C0J0eO<Rzf_Y=D?3
+!s100 ><O0<G7l@Q4AhdlX1GU2U2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eim
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L394
+V93Gei^dA`@W=fAmhhY<W20
+!s100 L@8PO@ci4_FbFU`m`SF@D2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+Z34 DEx4 work 2 im 0 22 93Gei^dA`@W=fAmhhY<W20
+l402
+L401
+V6iA8Y]DF51dlJ4UOiziz91
+!s100 _Ojf@IaK^oWV[E:im0<c43
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eindex_mux
+R0
+R2
+R3
+R4
+R5
+l0
+L201
+VjVOm>KN:l=c`WCZzK_OJb2
+!s100 YHdGA[Bd0Dz]>14]2Do@h2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+Z35 DEx4 work 9 index_mux 0 22 jVOm>KN:l=c`WCZzK_OJb2
+R1
+R2
+R22
+R23
+R24
+R25
+l215
+L214
+VCj5mB5ZMQcX?N>`HVhiiP3
+!s100 N1h2nW_5KkaXdSazkiP9Y2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 9 index_mux 0 22 [P4]GnKTV7djEh7iETeP=3
+l193
+L192
+VPGOeTo7AY>f4_H<5=YU4V0
+!s100 RJl:zM3zWJnXV5eJL4mZD1
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Emips
+Z36 w1556243936
+R2
+R3
+Z37 8//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd
+Z38 F//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd
+l0
+L5
+VF_:fBa^D7E?FzJFiTo5ie0
+!s100 Da3GOZmU3:ANdmPZ>GL3G3
+R6
+32
+Z39 !s110 1556296916
+!i10b 1
+Z40 !s108 1556296916.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd|
+Z42 !s107 //Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd|
+!i113 1
+R11
+R12
+Astruct
+Z43 DEx4 work 9 mips_zero 0 22 ]l_FEiMW_AUadef0FB9k10
+R21
+Z44 DEx4 work 3 mux 0 22 aO`eEZGk`j3jfzUmo3<G:1
+Z45 DEx4 work 11 sign_extend 0 22 5JJjzd8?kKiW9gaRbgmIh0
+Z46 DEx4 work 7 regfile 0 22 iOE0XeH0X<BOMjGiVU:KQ2
+R13
+Z47 DEx4 work 13 mips_register 0 22 Q;dC]7`@NVkeoe3TY=c`]2
+R33
+R34
+R35
+Z48 DEx4 work 15 mips_controller 0 22 hlJbUCO1P>09h^PWlWaMn0
+R1
+Z49 DEx4 work 12 mips_decoder 0 22 ][Y0hoi8oz`Y=F8KMZY7f0
+R2
+DEx4 work 4 mips 0 22 F_:fBa^D7E?FzJFiTo5ie0
+l61
+L10
+VgBRLW_:z342zg_6eObE8b3
+!s100 ;b]VB4]BSUY[6MNZcolB]0
+R6
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R11
+R12
+Emips_bit_register
+R0
+R2
+R3
+R4
+R5
+l0
+L150
+Vk_Se_2BzgULaT44FjhHef1
+!s100 8XPVd4g:[Jn^4a93;L`T>1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+DEx4 work 17 mips_bit_register 0 22 k_Se_2BzgULaT44FjhHef1
+R1
+R2
+l160
+L159
+VU4hceTkRTZN;<YC9DSVfd0
+!s100 A5;MiSe7L^3FR5IVIdmHW3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 17 mips_bit_register 0 22 KJJUV2?Fk:0?gA_:S_kSV3
+l150
+L149
+VE5]^>d`I`dg=lh]VHeBfo3
+!s100 cLUfZY972lRlQ82oKc@hi2
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Emips_controller
+Z50 w1556296914
+R2
+R1
+R3
+Z51 8//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd
+Z52 F//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd
+l0
+L74
+VhlJbUCO1P>09h^PWlWaMn0
+!s100 jkhCP<6Qn]jRLd`]U2l]]1
+R6
+32
+Z53 !s110 1556296921
+!i10b 1
+Z54 !s108 1556296921.000000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd|
+Z56 !s107 //Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R2
+R1
+R48
+l103
+L102
+Z57 VC]kLl3@6m2h0hE@=K7JzA2
+Z58 !s100 Yf3C=F5YWd<zFozn9JakP2
+R6
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Emips_decoder
+R50
+R2
+R1
+R3
+R51
+R52
+l0
+L17
+V][Y0hoi8oz`Y=F8KMZY7f0
+!s100 693F9]n:Sc>1Re@3<i^Sm3
+R6
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Abehaviour
+R2
+R1
+R49
+l28
+L27
+Z59 V_MSPPNSR<2?U8OU10PDOT3
+Z60 !s100 UXRjN<PEOC]8FT=KRC9]60
+R6
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Abehavior
+R2
+R1
+R49
+l28
+L27
+V[8i3@jT3@>PJg^KTGPZ713
+!s100 iO9MVM2XBznlX^KdjX>`C1
+R6
+32
+!s110 1555885658
+!i10b 1
+!s108 1555885658.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_control_v3.vhd|
+!s107 \\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_control_v3.vhd|
+!i113 1
+R11
+R12
+w1555779810
+F\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_control_v3.vhd
+8\\Mac\Home\Documents\COMP 4300 - Computer Architecture\lab4\lab4_control_v3.vhd
+Emips_register
+R0
+R2
+R3
+R4
+R5
+l0
+L126
+VQ;dC]7`@NVkeoe3TY=c`]2
+!s100 9PHg:B_Yl3E4eD64:N0HR3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R47
+R1
+R2
+l136
+L135
+VldFMoMd_PRQG;k_:[D?YL0
+!s100 D7MnboWAcicazoT=]?kHi3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 13 mips_register 0 22 5Ta4ocYYOM6;Gk<74:miN1
+l130
+L129
+VM;]nSQRFDBAi8V]^XPz;G2
+!s100 2U:iE6<LGhVPaHbD>CCB91
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Emips_zero
+R0
+R2
+R3
+R4
+R5
+l0
+L103
+V]l_FEiMW_AUadef0FB9k10
+!s100 nEQmi1VFa3milFSU[o82i3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R2
+R43
+l110
+L109
+VXHP8DjigJdLflBM_K<A8@1
+!s100 0M4_1H2d?cKSFmoJjaV`Y3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 9 mips_zero 0 22 41<cVQg`S=J1nZ3cDeDmi3
+l108
+L107
+V4RAOTb[YCQGdLFhcdoLOU1
+!s100 ie;C0GWPW<`4d>L<oYMi41
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Emux
+R0
+R2
+R3
+R4
+R5
+l0
+L174
+VaO`eEZGk`j3jfzUmo3<G:1
+!s100 <@UnRG[SQ4?iAW]M0z]hi2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R2
+R44
+R22
+R23
+R24
+R25
+l184
+L183
+VZlznQVCo<^;BSRNYNmUQ=3
+!s100 5;NmI4DFlRP1gOggGX@oT3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 3 mux 0 22 Hb0A6_j5Kbzf]RRnNRE=;3
+l170
+L169
+VhLZ5m4fL]5OSFb@YSFgS@3
+!s100 9>^3DR3O@Lz^@?gIg2X9C0
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Eregfile
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L287
+ViOE0XeH0X<BOMjGiVU:KQ2
+!s100 J7:;[GJN[BBnJ@]ncb`PF1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R46
+R1
+R2
+R22
+R23
+R24
+R25
+l306
+L303
+V1Aga^3GD9<cVjHjS4No;D0
+!s100 J6U38[o@Dlza4iE:NPVXj2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 7 regfile 0 22 eF7ZKGIkD`g3STdA@o[^c1
+l275
+L273
+VjPKOdmN:<gJjjAa5dAbKV0
+!s100 VENJ^9GhImB1ZFdNR3Fjo1
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20
+Esign_extend
+R0
+R2
+R3
+R4
+R5
+l0
+L232
+V5JJjzd8?kKiW9gaRbgmIh0
+!s100 BQYV:VY9X8`9T49`nLzCb3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R2
+R45
+l239
+L237
+V``ZLeb8Wc>2QmhJGHP:;e1
+!s100 ZG=i@>7PCl<`D`aW]T`5o1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+DEx4 work 11 sign_extend 0 22 XAMgB6RlZFTGk7U0Ni>d60
+l216
+L215
+V5@[dN[]TELo8T2KgmOmD?1
+!s100 ZUfzM9457>P]zRRlZnmWA0
+R6
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R11
+R12
+R18
+R19
+R20

@@ -38,30 +38,39 @@ public class Queen{
                //System.out.println("row: " + i + " col: " + j);
                stack.push(j);
                board[i][j] = 1;
-               if(i == 6){
+               if(i == 7){
+                  /*
                   for(int k = 0; k < 8; k++){
                      System.out.println(Arrays.toString(board[k]));
                   }
-                  System.out.println();
+                  */
                   board[i][j] = 0;
                   j = stack.pop();
                   i--;
                   board[i][j] = 0;
-                  counter++;
+                  
+                  //System.out.println(++counter);
+                  
                }
                break;
             }
+            
             while(j == 7){
+               
                j = stack.pop();
                i--;
+               System.out.println(stack.size());
+               if(i == 0 && j == 0){
+                  break;
+               }
                board[i][j] = 0;
             }
          } 
       }
-      /*for(int i = 0; i < 8; i++){
+      for(int i = 0; i < 8; i++){
          System.out.println(Arrays.toString(board[i]));
       }
-      */
+      
       System.out.print(counter);
    }
 }

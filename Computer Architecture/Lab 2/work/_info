@@ -1,0 +1,443 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Ealu
+Z0 w1575691481
+Z1 DPx4 work 13 bv_arithmetic 0 22 ;=2SeGQPb=ziI`4efIfkn0
+Z2 DPx4 work 9 dlx_types 0 22 N;][EXI4VdHCK129TNO5`0
+Z3 dC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2
+Z4 8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/datapath_aubie_v1.vhd
+Z5 FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/datapath_aubie_v1.vhd
+l0
+L41
+VHhnn9hV4ScX8n6mo9_>Ic2
+!s100 J_BE4[h`fjd;D3Y;Bl;:L2
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1576182705
+!i10b 1
+Z8 !s108 1576182705.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/datapath_aubie_v1.vhd|
+Z10 !s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/datapath_aubie_v1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Abehavior
+R1
+R2
+Z13 DEx4 work 3 alu 0 22 Hhnn9hV4ScX8n6mo9_>Ic2
+l76
+L72
+Vk9>=_PWRZWSGSFg2gETN;3
+!s100 :^fTf2XFOMf5FzK1d2^2H0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 3 alu 0 22 6;hmQQm50N4VzdZiGdZ]I2
+l12
+L11
+VO8;8lNQE9]h0UEGLHF:E70
+!s100 jacgg:09dahil@hbQgkKi0
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd|
+!i113 1
+R11
+R12
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd
+w1575989711
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd
+Eaubie
+Z14 w1575685228
+R2
+R1
+R3
+Z15 8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/interconnect_aubie.vhd
+Z16 FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/interconnect_aubie.vhd
+l0
+L6
+V4ESA;O^c<2dJh_zk:5Nng1
+!s100 ^BkcC0=[[Z=7dOM<k:9AG1
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/interconnect_aubie.vhd|
+Z18 !s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/interconnect_aubie.vhd|
+!i113 1
+R11
+R12
+Astruct
+Z19 DEx4 work 9 pcplusone 0 22 0mDGObX;[mK2ifXXFHZbQ1
+Z20 DEx4 work 12 threeway_mux 0 22 b_5WU4R0jN?zYk?EX?K[]0
+Z21 DEx4 work 3 mux 0 22 15F6=VPaTFN?EFCd7eOaj1
+R13
+Z22 DEx4 work 8 reg_file 0 22 bcBTHDeMfEGl^dkoj1BTX0
+Z23 DEx4 work 12 dlx_register 0 22 1O7ib=2Y>LL<3SING[@k23
+Z24 DEx4 work 6 memory 0 22 8Hakk9<EFM_FYWX1mY2Q71
+Z25 DEx4 work 16 aubie_controller 0 22 MC3Z]id9@_D@Yeg9N?79Q1
+R2
+R1
+Z26 DEx4 work 5 aubie 0 22 4ESA;O^c<2dJh_zk:5Nng1
+l40
+L10
+Z27 VQiQ`T^Sk[<kK123fAPChT2
+Z28 !s100 YVH3S:6O;N7^ZbWS`om3m2
+R6
+32
+!s110 1576182706
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Eaubie_controller
+Z29 w1576108587
+R2
+R1
+R3
+Z30 8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/control_aubie_v1.vhd
+Z31 FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/control_aubie_v1.vhd
+l0
+L6
+VMC3Z]id9@_D@Yeg9N?79Q1
+!s100 LJJ^<Ai2ol29e2Gl:hGcG2
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/control_aubie_v1.vhd|
+Z33 !s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/control_aubie_v1.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R1
+R25
+l38
+L37
+VY[^kaU61CViRBZO`HM=DP3
+!s100 zP7cjz1eI2XghN]AzEDz[0
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Pbv_arithmetic
+w1570025450
+R3
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd
+l0
+L15
+V;=2SeGQPb=ziI`4efIfkn0
+!s100 DK;Y`J0lJAh`j:XUgQ7B<1
+R6
+32
+b1
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd|
+!i113 1
+R11
+R12
+Bbody
+R1
+w1570059182
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd
+l0
+L1
+V>7F:32eL9a==an9INX2gX1
+!s100 IaYOa`I43_`ERJ<@6JiAg3
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd|
+!i113 1
+R11
+R12
+nbody
+Edlx_register
+R0
+R2
+R3
+R4
+R5
+l0
+L340
+V1O7ib=2Y>LL<3SING[@k23
+!s100 h]a20L>H42UJZ7Rg9c_i;1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+R23
+l351
+L349
+V6U:@dSm;b^MlE?LM_FdOG2
+!s100 `ZLmGfO7];nVYBk=DG>_B1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pdlx_types
+w1570025432
+R3
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd
+l0
+L2
+VN;][EXI4VdHCK129TNO5`0
+!s100 E2c;:eYf;hh[jFU?F_ci41
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd|
+!i113 1
+R11
+R12
+Ememory
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L448
+V8Hakk9<EFM_FYWX1mY2Q71
+!s100 52LdGkjZO3E`G4GBM@DM13
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+R24
+l460
+L458
+VgB9XX>4hTF@4e^HRH0Czl3
+!s100 iOng?S92oQi;BTZVP>F`o1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux
+R0
+R2
+R3
+R4
+R5
+l0
+L391
+V15F6=VPaTFN?EFCd7eOaj1
+!s100 1IlU[5Vl^HA:KJeJkmRzb1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+R21
+l402
+L401
+VBIZ]gADG2EazU1b3zJEKm1
+!s100 ?n_MRLm]La^jMOib`JL_H0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Epcplusone
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L365
+V0mDGObX;[mK2ifXXFHZbQ1
+!s100 I_EDA^hRLGJM=ZNoNVJlm1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+R19
+l375
+L374
+VBbMHnkn>1efiamTajQ[_91
+!s100 XM;Wi@mBgb^gfl;<JVR:f3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ereg_file
+R0
+R2
+R1
+R3
+R4
+R5
+l0
+L315
+VbcBTHDeMfEGl^dkoj1BTX0
+!s100 2^k84=ncMkoGhn:_bTC^13
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+R1
+R22
+l323
+L321
+V4Rm1LHAeFR9n6:j=C937X1
+!s100 Dg`k4mHne[J_l@c<ZVgSf0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ethreeway_mux
+R0
+R2
+R3
+R4
+R5
+l0
+L417
+Vb_5WU4R0jN?zYk?EX?K[]0
+!s100 eF;3@I5WiKJ>E:6P`IX?[0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+R20
+l429
+L428
+V4oW4SmcC4QDO]FQ4jdCD61
+!s100 _0AeheS]=A=NQ=fk>9Rom0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

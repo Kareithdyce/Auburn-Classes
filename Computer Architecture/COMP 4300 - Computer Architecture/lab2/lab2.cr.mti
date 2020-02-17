@@ -1,0 +1,30 @@
+{Z:/Documents/COMP 4300 - Computer Architecture/lab2/bva-b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Documents/COMP 4300 - Computer Architecture/lab2/bva-b.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package body bv_arithmetic
+-- Loading package bv_arithmetic
+
+} {} {}} {Z:/Documents/COMP 4300 - Computer Architecture/lab2/dlx_types.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Documents/COMP 4300 - Computer Architecture/lab2/dlx_types.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package dlx_types
+
+} {} {}} {Z:/Documents/COMP 4300 - Computer Architecture/lab2/bva.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Documents/COMP 4300 - Computer Architecture/lab2/bva.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package bv_arithmetic
+
+} {} {}} {Z:/Documents/COMP 4300 - Computer Architecture/lab2/alu.vhd} {2 {vcom -work work -2002 -explicit -stats=none {Z:/Documents/COMP 4300 - Computer Architecture/lab2/alu.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package dlx_types
+-- Loading package bv_arithmetic
+-- Compiling entity ALU
+** Warning: Z:/Documents/COMP 4300 - Computer Architecture/lab2/alu.vhd(10): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Compiling architecture behavior of alu
+
+} {} {}}

@@ -1,0 +1,75 @@
+{//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_control_v3.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package bv_arithmetic
+-- Loading package dlx_types
+-- Compiling entity mips_decoder
+-- Compiling architecture behaviour of mips_decoder
+-- Compiling entity mips_controller
+-- Compiling architecture behaviour of mips_controller
+
+} {} {}} {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva-b.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package body bv_arithmetic
+-- Loading package bv_arithmetic
+
+} {} {}} {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_mips_v5.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package dlx_types
+-- Compiling entity mips
+-- Compiling architecture struct of mips
+-- Loading package bv_arithmetic
+-- Loading entity mips_decoder
+-- Loading entity mips_controller
+-- Loading entity index_mux
+-- Loading entity IM
+-- Loading entity DM
+-- Loading entity mips_register
+-- Loading entity add4
+-- Loading entity regfile
+-- Loading entity sign_extend
+-- Loading entity mux
+-- Loading entity alu
+-- Loading entity mips_zero
+
+} {} {}} {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd} {1 {vcom -work work -2002 -explicit -stats=none {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/bva.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package bv_arithmetic
+
+} {} {}} {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {//Mac/Home/Documents/COMP 4300 - Computer Architecture/lab4/lab4_datapath_v4.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling package dlx_types
+-- Loading package dlx_types
+-- Loading package bv_arithmetic
+-- Compiling entity alu
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling architecture behaviour of alu
+-- Compiling entity mips_zero
+-- Compiling architecture behaviour of mips_zero
+-- Compiling entity mips_register
+-- Compiling architecture behaviour of mips_register
+-- Compiling entity mips_bit_register
+-- Compiling architecture behaviour of mips_bit_register
+-- Compiling entity mux
+-- Compiling architecture behaviour of mux
+-- Compiling entity index_mux
+-- Compiling architecture behaviour of index_mux
+-- Compiling entity sign_extend
+-- Compiling architecture behaviour of sign_extend
+-- Compiling entity add4
+-- Compiling architecture behaviour of add4
+-- Compiling entity regfile
+-- Compiling architecture behaviour of regfile
+-- Compiling entity DM
+-- Compiling architecture behaviour of DM
+-- Compiling entity IM
+-- Compiling architecture behaviour of IM
+
+} {} {}}

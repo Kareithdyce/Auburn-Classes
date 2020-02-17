@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 14.11.25508.2	    02/15/18 23:03:04
+Microsoft (R) Macro Assembler Version 14.24.28316.0	    02/05/20 12:59:49
 Number4.asm						     Page 1 - 1
 
 
@@ -20,32 +20,54 @@ Number4.asm						     Page 1 - 1
 	   00008967
 	   00006F6A
  00000022 0000000E R		myPointer	DWORD	myDoubles
+ 00000026 FF FE FD FC		var1 SBYTE	-1, -2, -3, -4
+ 0000002A 1000 2000 3000	var2 WORD		1000h, 2000h, 3000h, 4000h
+	   4000
+ 00000032 FFEB FFD6		var3 SWORD	-21, -42
+ 00000036 000010A0		var4 DWORD	10A0h, 20B0h, 30C0h, 40D0h
+	   000020B0
+	   000030C0
+	   000040D0
 
 
 
 
  00000000			.code
  00000000			main proc
- 00000000  BE 00000000 R	mov esi, OFFSET myBytes					
- 00000005  66| 8B 46 02		mov ax, WORD PTR [esi+2]		; A.	AX = 4433h		
- 00000009  A1 00000004 R	mov eax, DWORD PTR myWords		; B.	EAX = 56781234h 		
- 0000000E  8B 35 00000022 R	mov esi, myPointer
- 00000014  B8 00000000		mov eax, 0
- 00000019  66| 8B 46 08		mov ax, WORD PTR [esi+8]		; C.	AX = CD54h
+				;mov esi, OFFSET myBytes					
+				;mov ax, WORD PTR [esi+2]		; A.	AX = 4433h		
+				;mov eax, DWORD PTR myWords		; B.	EAX = 56781234h 		
+				;mov esi, myPointer
+				;mov eax, 0
+				;mov ax, WORD PTR [esi+3]		; C.	AX = CD54h
 
-				; mov ax, WORD PTR [esi+1]		; D.	AX = 00ABh 		
+				;mov ax, WORD PTR [esi+1]		; D.	AX = 00ABh 		
 				;mov ax, WORD PTR [esi-6]		; E.	AX = ABCDh		
 
- 0000001D  B8 00000000		mov eax, 0
- 00000022  66| B8 0004		mov ax, TYPE  myDoubles
+				;mov ax, TYPE  myDoubles
+ 00000000  B8 00000000		mov eax, 0
+ 00000005  66| A1		mov ax, var2				; AX = 1000h 
+	   0000002A R
+ 0000000B  66| A1		mov ax, [var2 + 1]	
+	   0000002B R
+ 00000011  66| A1		mov ax, [var2 + 2]
+	   0000002C R
+ 00000017  66| A1		mov ax, [var2 + 3]
+	   0000002D R
+ 0000001D  66| A1		mov ax, [var2 + 4]			; AX = 3000h
+	   0000002E R
+ 00000023  66| A1		mov ax, var3				; AX = -21
+	   00000032 R
+ 00000029  66| A1		mov ax, [var3-2]			; AX = 4000h
+	   00000030 R
 
 
 				invoke ExitProcess,0
- 00000026  6A 00	   *	    push   +000000000h
- 00000028  E8 00000000 E   *	    call   ExitProcess
- 0000002D			main endp
+ 0000002F  6A 00	   *	    push   +000000000h
+ 00000031  E8 00000000 E   *	    call   ExitProcess
+ 00000036			main endp
 				end main
-Microsoft (R) Macro Assembler Version 14.11.25508.2	    02/15/18 23:03:04
+Microsoft (R) Macro Assembler Version 14.24.28316.0	    02/05/20 12:59:49
 Number4.asm						     Symbols 2 - 1
 
 
@@ -57,8 +79,8 @@ Segments and Groups:
 
 FLAT . . . . . . . . . . . . . .	GROUP
 STACK  . . . . . . . . . . . . .	32 Bit	 00001000 DWord	  Stack	  'STACK'	 
-_DATA  . . . . . . . . . . . . .	32 Bit	 00000026 DWord	  Public  'DATA'	
-_TEXT  . . . . . . . . . . . . .	32 Bit	 0000002D DWord	  Public  'CODE'	
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000046 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000036 DWord	  Public  'CODE'	
 
 
 Procedures, parameters, and locals:
@@ -66,7 +88,7 @@ Procedures, parameters, and locals:
                 N a m e                 Type     Value    Attr
 
 ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
-main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000002D Public STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000036 Public STDCALL
 
 
 Symbols:
@@ -86,6 +108,10 @@ myBytes  . . . . . . . . . . . .	Byte	 00000000 _DATA
 myDoubles  . . . . . . . . . . .	DWord	 0000000E _DATA	
 myPointer  . . . . . . . . . . .	DWord	 00000022 _DATA	
 myWords  . . . . . . . . . . . .	Word	 00000004 _DATA	
+var1 . . . . . . . . . . . . . .	Byte	 00000026 _DATA	
+var2 . . . . . . . . . . . . . .	Word	 0000002A _DATA	
+var3 . . . . . . . . . . . . . .	Word	 00000032 _DATA	
+var4 . . . . . . . . . . . . . .	DWord	 00000036 _DATA	
 
 	   0 Warnings
 	   0 Errors

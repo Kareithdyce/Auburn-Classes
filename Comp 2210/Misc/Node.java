@@ -5,7 +5,7 @@
 
 /** Defines a node for a doubly-linked list. */
 public class Node<T> {
-   T elnement;
+   T element;
    Node next;
    Node prev;
 

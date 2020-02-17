@@ -1,0 +1,18 @@
+
+entity ALU is 
+	port(operand1, operand2: in dlx_word; 
+	operation: in alu_operation_code;
+	signed: in bit;
+	result: out dlx_word; error: out error_code); 
+end entity ALU;
+
+
+architecture behavior of ALUPricess is
+begin
+	ALUProcess : process() is
+	begin 
+		case 
+		
+		end case;
+	end process ALUProcess;
+end behavior;

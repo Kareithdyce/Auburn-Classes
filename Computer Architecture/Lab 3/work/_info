@@ -1,0 +1,108 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Ealu
+Z0 w1572533657
+Z1 DPx4 work 13 bv_arithmetic 0 22 ;=2SeGQPb=ziI`4efIfkn0
+Z2 DPx4 work 9 dlx_types 0 22 N;][EXI4VdHCK129TNO5`0
+Z3 dC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2
+Z4 8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd
+Z5 FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd
+l0
+L5
+V6;hmQQm50N4VzdZiGdZ]I2
+!s100 hzPC6hm01nhEQ_2aO9F3D3
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1572533667
+!i10b 1
+Z8 !s108 1572533667.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd|
+Z10 !s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/ALU.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Abehaviour
+R1
+R2
+DEx4 work 3 alu 0 22 6;hmQQm50N4VzdZiGdZ]I2
+l12
+L11
+VO8;8lNQE9]h0UEGLHF:E70
+!s100 jacgg:09dahil@hbQgkKi0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pbv_arithmetic
+w1570029050
+R3
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd
+l0
+L15
+V;=2SeGQPb=ziI`4efIfkn0
+!s100 DK;Y`J0lJAh`j:XUgQ7B<1
+R6
+32
+b1
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva.vhd|
+!i113 1
+R11
+R12
+Bbody
+R1
+Z13 w1570062782
+Z14 8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd
+Z15 FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd
+l0
+L1
+Z16 V>7F:32eL9a==an9INX2gX1
+Z17 !s100 IaYOa`I43_`ERJ<@6JiAg3
+R6
+32
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/bva-b.vhd|
+!i113 1
+R11
+R12
+Z19 nbody
+Pdlx_types
+w1570029032
+R3
+8C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd
+FC:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd
+l0
+L2
+VN;][EXI4VdHCK129TNO5`0
+!s100 E2c;:eYf;hh[jFU?F_ci41
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd|
+!s107 C:/Users/Kareith/Documents/Auburn/Auburn Classes/Computer Architecture/Lab 2/work/dlx-types.vhd|
+!i113 1
+R11
+R12
